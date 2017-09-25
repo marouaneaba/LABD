@@ -1,0 +1,159 @@
+Execricice 1 :
+Question 1 :
+
+SELECT ?x ?t WHERE
+{
+ ?x a rdfs:Class
+}
+
+Question 2:
+PREFIX h: <http://www.labd.org/2015/sport/schema#>
+select * where{
+	?x a rdf:Property
+	?x rdfs:domain h:Sport
+}
+
+Question 3 :
+PREFIX h: <http://www.labd.org/2015/sport/schema#>
+select * where{
+
+	?x  a h:Sport
+}
+
+Question 4:
+PREFIX h: <http://www.labd.org/2015/sport/schema#>
+select distinct ?j where{
+
+	?x  a h:Sport
+	h:Sport rdfs:comment ?j
+}
+Question 5:
+PREFIX h: <http://www.labd.org/2015/sport/schema#>
+select ?x ?y where{
+
+	?x  a h:Sport
+	FILTER NOT EXISTS {?x h:utiliseMateriel ?y}
+}
+Question 6 :
+avec Group By :
+PREFIX sp: <http://www.labd.org/2015/sport/schema#>
+PREFIX hu: <http://www.inria.fr/2007/09/11/humans.rdfs>
+
+select distinct * where{
+
+?x sp:pratique ?k
+
+
+
+}
+GROUP BY ?x
+having( COUNT(?k)>1 )
+
+sans Group By :
+
+PREFIX sp: <http://www.labd.org/2015/sport/schema#>
+PREFIX hu: <http://www.inria.fr/2007/09/11/humans.rdfs>
+
+select distinct ?m where{
+
+  ?m sp:pratique ?res1
+  ?m sp:pratique ?res2
+  FILTER (xsd:string(?res1) != xsd:string(?res2))
+
+MINUS {
+  ?x sp:pratique ?k
+  }
+}
+
+Question 7 :
+
+PREFIX sp: <http://www.labd.org/2015/sport/schema#>
+PREFIX hu: <http://www.inria.fr/2007/09/11/humans.rdfs>
+
+select distinct * where{
+
+?x sp:pratique ?k
+
+
+
+}
+GROUP BY ?x
+having( COUNT(?k)=1 )
+//////
+Question 8 :
+PREFIX sp: <http://www.labd.org/2015/sport/schema#>
+PREFIX hu: <http://www.inria.fr/2007/09/11/humans.rdfs>
+
+select    ?x (count(?u) as ?ns) where{
+	?x sp:pratique ?u
+	?u a sp:Sport
+
+}
+GROUP BY ?x
+
+Question 9 :
+
+Question 10 :
+Question 11 :
+
+
+
+Exercice 2:
+	Question 1:
+
+	PREFIX f: <http://xmlns.com/foaf/0.1/>
+	PREFIX d: <http://bond007.org/RDF/mes_donnees.rdf#>
+	select * 
+	where{
+		d:me a f:Person
+		d:me f:knows ?k
+		?k f:name ?l
+	OPTIONAL {?k f:homepage ?p}
+
+	}
+	
+	Question 2 :
+		
+		PREFIX f: <http://xmlns.com/foaf/0.1/>
+		PREFIX d: <http://bond007.org/RDF/mes_donnees.rdf#>
+		select * 
+		where{
+			d:me a f:Person
+			d:me f:knows ?k
+			?k f:name ?l
+		OPTIONAL {?k (f:homepage|f:interest|f:workplaceHomepage) ?p}
+
+		}
+	Question 3 : 
+	
+	PREFIX f: <http://xmlns.com/foaf/0.1/>
+	PREFIX d: <http://bond007.org/RDF/mes_donnees.rdf#>
+	select * 
+	where{
+		d:me a f:Person
+		d:me f:knows+ ?k
+		?k f:name ?l
+	}
+	Question 4 :
+	
+	PREFIX f: <http://xmlns.com/foaf/0.1/>
+	PREFIX d: <http://bond007.org/RDF/mes_donnees.rdf#>
+	select * 
+	where{
+		d:me a f:Person
+		d:me f:knows+ ?k
+		?k f:name ?l
+		FILTER NOT EXISTS{?k f:phone ?p}
+	}
+	Question 5 :
+	
+	PREFIX f: <http://xmlns.com/foaf/0.1/>
+	PREFIX d: <http://bond007.org/RDF/mes_donnees.rdf#>
+	select distinct ?y (count(?k) as ?ns)
+	where{
+
+		?y f:knows ?k
+		?y f:name ?l
+	}
+	GROUP BY ?y	
+	

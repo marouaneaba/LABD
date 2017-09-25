@@ -1,0 +1,13 @@
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+		xmlns="http://www.a.com" 
+		xmlns:b="http://www.b.com" 
+		targetNamespace = "http://www.a.com"
+		elementFormDefault="qualified">
+
+		<xs:import namespace="http://www.b.com" 
+ schemaLocation = "b.xsd"  />
+		
+		<xs:element name="A" type="b:typeA"/>
+
+</xs:schema>

@@ -1,0 +1,50 @@
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+
+<http://bond007.org/RDF/mes_donnees.rdf#me>
+  a foaf:Person ;
+  foaf:name "James Bond" ;
+  foaf:homepage <http://bond007.org/> ;
+  foaf:knows <http://bond007.org/RDF/mes_donnees.rdf#white>, <http://bond007.org/RDF/mes_donnees.rdf#eve>, <http://bond007.org/RDF/mes_donnees.rdf#auric>, <http://bond007.org/RDF/mes_donnees.rdf#ernst> .
+
+<http://bond007.org/RDF/mes_donnees.rdf#white>
+  a foaf:Person ;
+  foaf:name "Bill White" ;
+  foaf:homepage <http://white.uk/> ;
+  foaf:knows <http://bond007.org/RDF/mes_donnees.rdf#greene> .
+
+<http://bond007.org/RDF/mes_donnees.rdf#greene>
+  a foaf:Person ;
+  foaf:name "Dominic Greene" ;
+  foaf:knows <http://bond007.org/RDF/mes_donnees.rdf#mitch> ;
+  foaf:interest <http://quantum.com> ;
+  foaf:workplaceHomepage <http://greene_planet.com> .
+
+<http://bond007.org/RDF/mes_donnees.rdf#mitch>
+  a foaf:Person ;
+  foaf:name "Craig Mitchell" ;
+  foaf:interest <http://quantum.com> .
+
+<http://bond007.org/RDF/mes_donnees.rdf#eve>
+  a foaf:Person ;
+  foaf:name "Eve Moneypenny" ;
+  foaf:knows <http://bond007.org/RDF/mes_donnees.rdf#me> ;
+  foaf:phone "00 44 6 10 65 34 22" .
+
+<http://bond007.org/RDF/mes_donnees.rdf#auric>
+  a foaf:Person ;
+  foaf:name "Auric Goldfinger" .
+
+<http://bond007.org/RDF/mes_donnees.rdf#ernst>
+  a foaf:Person ;
+  foaf:name "Ernst Stavro Blofeld" ;
+  foaf:workplaceHomepage <http://spectre.com> .
+
+<http://bond007.org/RDF/mes_donnees.rdf#badguys>
+  a foaf:Group ;
+  foaf:member <http://bond007.org/RDF/mes_donnees.rdf#auric>, <http://bond007.org/RDF/mes_donnees.rdf#greene>, <http://bond007.org/RDF/mes_donnees.rdf#ernst> .
+
+<http://bond007.org/RDF/mes_donnees.rdf#mi6>
+  a foaf:Organization ;
+  foaf:name "Secret Intelligence Service" ;
+  foaf:nick "MI-6" ;
+  foaf:member <http://bond007.org/RDF/mes_donnees.rdf#me>, <http://bond007.org/RDF/mes_donnees.rdf#eve> .

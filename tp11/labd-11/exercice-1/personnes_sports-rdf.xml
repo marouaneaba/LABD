@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:ns0="http://www.labd.org/2015/sport/schema#">
+
+  <rdf:Description rdf:about="http://www.inria.fr/2007/09/11/humans.rdfs-instances#Harry">
+    <ns0:pratique rdf:resource="http://www.labd.org/2015/sport/instance#Football"/>
+    <ns0:pratique rdf:resource="http://www.labd.org/2015/sport/instance#Tennis"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://www.inria.fr/2007/09/11/humans.rdfs-instances#Catherine">
+    <ns0:pratique rdf:resource="http://www.labd.org/2015/sport/instance#Football"/>
+    <ns0:pratique rdf:resource="http://www.labd.org/2015/sport/instance#Basket"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://www.inria.fr/2007/09/11/humans.rdfs-instances#Laura">
+    <ns0:pratique rdf:resource="http://www.labd.org/2015/sport/instance#Basket"/>
+  </rdf:Description>
+
+</rdf:RDF>

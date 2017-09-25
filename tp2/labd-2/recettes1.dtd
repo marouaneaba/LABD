@@ -1,0 +1,34 @@
+<!ELEMENT cuisine (recette)+>
+<!ELEMENT recette (titre, categorie, ingredients,tps_preparation?, tps_cuisson?, texte, conseil?)>
+<!ELEMENT titre (#PCDATA)>
+<!ELEMENT tps_preparation (#PCDATA)>
+<!ELEMENT tps_cuisson (#PCDATA)>
+<!ELEMENT conseil (#PCDATA)>
+<!ELEMENT categorie (#PCDATA)>
+
+<!ELEMENT ingredients (ingredient)+>
+<!ELEMENT ingredient (nom_ing,quantite)>
+<!ELEMENT nom_ing (#PCDATA)>
+<!ELEMENT quantite (#PCDATA)>
+
+<!ELEMENT texte (etape)+>
+<!ELEMENT etape (#PCDATA)>
+
+
+6. Les éléments recette qui ont strictement moins de 7 ingrédients
+7. Les titres des recettes qui ont strictement moins de 7 ingrédients
+8. Les recettes qui utilisent de la farine
+9. Les recettes de la catégorie entrée
+	
+6.//recette/ingredients[count(ingredient) <7]/parent::recette
+7./recette/ingredients[count(ingredient)<7]/parent:recette/titre
+8.//recette[contains(ingredients ,'farine')]
+9.//recette[contains(categorie ,'entrée')]
+
+
+6. /descendant::recette/ingredients[count(./ingredient)<7]/parent::recette
+7. /descendant::recette/ingredients[count(./ingredient)<7]/preceding-sibling::titre
+8. /descendant::ingredients[contains(.,'farine')]/parent::recette
+9. //recette[contains(./categorie,'entrée')]
+
+

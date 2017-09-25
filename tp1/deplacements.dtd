@@ -1,0 +1,34 @@
+
+<!ELEMENT  deplacements (trajet ,deplacement,(deplacement|correspondance)*)>
+<!ELEMENT  trajet (depart,destination,date,modeTranspore,preference?,vitesseDeMarchePied?,TempParcours)>
+<!ELEMENT  depart (#PCDATA)>
+<!ELEMENT  destination (#PCDATA)>
+<!ELEMENT  date (jour,mois,heur)>
+<!ELEMENT  jour (#PCDATA)>
+<!ELEMENT  mois (#PCDATA)>
+<!ELEMENT  heur (#PCDATA)>
+<!ATTLIST jour nom CDATA #REQUIRED
+                num CDATA #REQUIRED>
+<!ATTLIST  mois nom CDATA #REQUIRED>
+<!ATTLIST  heur valeur CDATA #REQUIRED>
+<!ELEMENT  modeTranspore (#PCDATA)>
+<!ELEMENT preference (#PCDATA)>
+<!ELEMENT vitesseDeMarchePied EMPTY>
+<!ATTLIST vitesseDeMarchePied valeur CDATA #REQUIRED>
+<!ELEMENT TempParcours EMPTY>
+<!ATTLIST TempParcours valeur CDATA #REQUIRED>
+<!ELEMENT deplacement  (pied|mode)>
+<!ATTLIST deplacement heur CDATA #IMPLIED>
+<!ELEMENT pied (depart,destination,durée)>
+<!ELEMENT durée EMPTY>
+<!ATTLIST durée valeur CDATA #REQUIRED>
+<!ELEMENT mode (direction,descendre)>
+<!ATTLIST mode nom CDATA #REQUIRED
+			   ligne CDATA #REQUIRED
+			   company CDATA #IMPLIED
+			   duree CDATA #REQUIRED>
+<!ELEMENT direction (#PCDATA)>
+<!ELEMENT descendre (#PCDATA)>
+<!ATTLIST descendre heur CDATA #REQUIRED>
+<!ELEMENT correspondance EMPTY>
+<!ATTLIST correspondance valeur CDATA #REQUIRED>

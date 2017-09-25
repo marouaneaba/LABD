@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema targetNamespace="http://www.fil.univ-lille1.fr/labd" 
+			xmlns:xs="http://www.w3.org/2001/XMLSchema" 
+			xmlns:in="http://xml.insee.fr/schema"  
+			xmlns:b="http://www.fil.univ-lille1.fr/labd">
+			
+		<xs:import namespace ="http://xml.insee.fr/shema" schemaLocation ="insee-comun.xsd"/>
+		<xs:import namespace ="http://xml.insee.fr/shema" schemaLocation ="individu.xsd"/>
+
+
+		<xs:element name = "livretFamille" >
+			<xs:complexType>
+				<xs:sequence>
+					<xs:element ref ="b:parents" minOccurs ="2" maxOccurs="2"/>
+					<xs:element ref ="b:ActMariage"  minOccurs ="2" maxOccurs="2"/>
+					<xs:element ref ="b:enfants"  minOccurs ="0" maxOccurs="999"/>
+				</xs:sequence>
+			</xs:complexType>
+		</xs:element>
+		
+		<xs:element name ="parents">
+			<xs:complexType>
+				<xs:sequence>
+					<xs:element name="pere" type="in:IndividuType"/>
+					<xs:element name="mere" type="in:IndividuType"/>
+				</xs:sequence>
+			</xs:complexType>
+		</xs:element>
+		
+		<xs:element name ="ActMariage">
+			<xs:complexType>
+			<xs:sequence>
+				<xs:element name="Date" type="in:DateSoupleType" minOccurs = "1"/>
+				<xs:element name="Lieu" type="in:LieuType" minOccurs ="1"/>
+			</xs:sequence>
+			</xs:complexType>
+		</xs:element>
+		
+		<xs:element name ="enfants">
+			<xs:complexType>
+			<xs:sequence>
+				<xs:element name = "enfant" type="in:IndividuType" minOccurs ="0"  maxOccurs ="999"/>
+			</xs:sequence>
+			</xs:complexType>
+		</xs:element>
+		
+		
+</xs:schema>

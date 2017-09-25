@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:ns0="http://www.labd.org/2015/sport/schema#">
+
+  <rdf:Description rdf:about="http://www.labd.org/2015/sport/instance#Football">
+    <rdf:type rdf:resource="http://www.labd.org/2015/sport/schema#SportBallon"/>
+    <rdfs:label xml:lang="fr">Football</rdfs:label>
+    <rdfs:label xml:lang="en">Soccer</rdfs:label>
+    <ns0:sePratiqueSur>
+      <ns0:TerrainDeSport rdf:about="http://www.labd.org/2015/sport/instance#TerrainFoot">
+        <rdfs:label>Terrain de football</rdfs:label>
+        <ns0:largeur>
+          <rdf:Description>
+            <ns0:min>40</ns0:min>
+            <ns0:max>90</ns0:max>
+          </rdf:Description>
+        </ns0:largeur>
+
+        <ns0:longueur>
+          <rdf:Description>
+            <ns0:min>90</ns0:min>
+            <ns0:max>120</ns0:max>
+          </rdf:Description>
+        </ns0:longueur>
+
+      </ns0:TerrainDeSport>
+    </ns0:sePratiqueSur>
+
+    <ns0:nbJoueursParEquipe>11</ns0:nbJoueursParEquipe>
+    <ns0:objectif>Mettre le ballon dans le but adverse, sans utiliser les bras</ns0:objectif>
+    <ns0:utiliseMateriel>
+      <ns0:Ballon rdf:about="http://www.labd.org/2015/sport/instance#BallonFoot">
+        <rdfs:label>Ballon de football</rdfs:label>
+        <ns0:formeBallon>Sphérique</ns0:formeBallon>
+      </ns0:Ballon>
+    </ns0:utiliseMateriel>
+
+    <ns0:match>
+      <rdf:Description>
+        <rdfs:label>Match de football</rdfs:label>
+        <ns0:duree>2 périodes de 45 minutes90 minutes (2 fois 45 minutes), avec éventuellement des prolongations (2 fois 15 minutes) suivies (ou pas) de tirs au but</ns0:duree>
+      </rdf:Description>
+    </ns0:match>
+
+    <ns0:competitions>
+      <rdf:Bag>
+        <rdf:li>
+          <rdf:Description rdf:about="http://www.labd.org/2015/sport/instance#MondialFoot">
+            <rdfs:label xml:lang="fr">Coupe du monde de football</rdfs:label>
+            <rdfs:comment>La coupe du monde de football se déroule tous les 4 ans et réunit les meilleurs équipes 
+     nationales de tous les continents</rdfs:comment>
+          </rdf:Description>
+        </rdf:li>
+
+        <rdf:li>
+          <rdf:Description rdf:about="http://www.labd.org/2015/sport/instance#CAN">
+            <rdfs:label xml:lang="fr">Coupe d'Afrique de Nations</rdfs:label>
+            <rdfs:comment>La Coupe d'Afrique des nations, couramment abrégée en CAN, est la plus importante compétition internationale 
+     de football en Afrique. Elle est organisée par la Confédération africaine de football (CAF) 
+     et met aux prises les sélections nationales africaines. Cette compétition est disputée tous les deux ans</rdfs:comment>
+          </rdf:Description>
+        </rdf:li>
+
+        <rdf:li>Ligue des Champions</rdf:li>
+      </rdf:Bag>
+    </ns0:competitions>
+
+  </rdf:Description>
+
+  <ns0:SportBallon rdf:about="http://www.labd.org/2015/sport/instance#Basket">
+    <rdfs:label>Basketball</rdfs:label>
+    <ns0:sePratiqueSur>
+      <ns0:TerrainDeSport rdf:about="http://www.labd.org/2015/sport/instance#TerrainBasket">
+        <rdfs:label>Terrain de basketball</rdfs:label>
+      </ns0:TerrainDeSport>
+    </ns0:sePratiqueSur>
+
+    <ns0:nbJoueursParEquipe>5</ns0:nbJoueursParEquipe>
+    <ns0:utiliseMateriel>
+      <ns0:Ballon rdf:about="http://www.labd.org/2015/sport/instance#BallonBasket">
+        <rdfs:label>Ballon de basketball</rdfs:label>
+        <ns0:formeBallon>Sphérique</ns0:formeBallon>
+      </ns0:Ballon>
+    </ns0:utiliseMateriel>
+
+    <ns0:utiliseMateriel>
+      <ns0:MaterielSportif rdf:about="http://www.labd.org/2015/sport/instance#PanierBasket">
+        <rdfs:label>Panier de basketball</rdfs:label>
+      </ns0:MaterielSportif>
+    </ns0:utiliseMateriel>
+
+    <ns0:objectif>Marquer des paniers</ns0:objectif>
+    <ns0:match>
+      <rdf:Description>
+        <rdfs:label>Match de Basket</rdfs:label>
+        <ns0:duree>
+          <rdf:Alt>
+            <rdf:li>4 périodes de 10 minutes (règle de la FIBA)</rdf:li>
+            <rdf:li>4 périodes de 12 minutes (règle de la NBA)</rdf:li>
+          </rdf:Alt>
+        </ns0:duree>
+
+      </rdf:Description>
+    </ns0:match>
+
+  </ns0:SportBallon>
+
+  <ns0:SportRaquette rdf:about="http://www.labd.org/2015/sport/instance#Tennis">
+    <rdfs:label>Tennis</rdfs:label>
+    <ns0:objectif>Renvoyer la balle ... et faire en sorte que l'adversaire ne la renvoie pas</ns0:objectif>
+    <ns0:utiliseMateriel>
+      <ns0:Raquette>
+        <rdfs:label>Raquette de tennis</rdfs:label>
+      </ns0:Raquette>
+    </ns0:utiliseMateriel>
+
+  </ns0:SportRaquette>
+
+  <ns0:SportIndividuel rdf:about="http://www.labd.org/2015/sport/instance#Course">
+    <rdfs:label>Course à pieds</rdfs:label>
+    <ns0:objectif>Courir le plus vite possible, sur une distance fixe</ns0:objectif>
+    <rdfs:comment>On distingue les courses sur une distance longue (fond), moyenne (demi-fond) ou courte (sprint)</rdfs:comment>
+  </ns0:SportIndividuel>
+
+</rdf:RDF>

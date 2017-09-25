@@ -1,0 +1,7 @@
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+<xsd:simpleType name ="date">
+  <xsd:sequence>
+      <xsd:element 
+  </xsd:sequence>
+</xsd:simpleType>
+<xsd:schema >

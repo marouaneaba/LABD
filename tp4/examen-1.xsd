@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<A 	xlmns = "http://www.w3.org/2001/XMLSchema"
+	xmlns:exm ="http://www.exam.labd"
+	attributeFormDefault ="unqualified"
+	elementFormDefault ="qualified"
+	targetNamespace ="http://www.examen.labd">
+
+  <element name="examen">
+    <complexType>
+      <sequence>
+        <element maxOccurs="unbounded" ref="exm:exercice" />
+      </sequence>
+    </complexType>
+  </element>
+  
+  <element name="exercice" type="string"/>
+
+</A >
+
+

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<xsd:schema targetNamespace="http://www.fil.univ-lille1.fr/labd" 
+			xmlns:xsd="http://www.w3.org/2001/XMLSchema" 
+			xmlns:in="http://xml.insee.fr/schema"  
+			xmlns:labd="http://www.fil.univ-lille1.fr/labd">
+			
+		<xsd:import namespace ="http://xml.insee.fr/shema" schemaLocation ="insee-comun.xsd"/>
+		<xsd:import namespace ="http://xml.insee.fr/shema" schemaLocation ="individu.xsd"/>
+				
+		
+		<xsd:element name="livretFamille">
+			<xsd:complexType>
+				<xsd:sequence>
+					<xsd:element ref="labd:parents" maxOccurs="2" minOccurs="2"/>
+					<xsd:element ref="labd:actMariage" maxOccurs="1"/>
+					<xsd:element ref="labd:enfants" maxOccurs="unbounded" minOccurs="0"/>
+				</xsd:sequence>
+			</xsd:complexType>
+		</xsd:element>
+		
+		<xsd:element name="parents">
+			<xsd:complexType>
+				<xsd:sequence>
+					<xsd:element  name="pere" type="in:IndividuType"/>
+					<xsd:element name="mere" type="in:IndividuType"/>
+				</xsd:sequence>
+			</xsd:complexType>
+		</xsd:element>	
+		
+		<xsd:element name="actMariage">
+			<xsd:complexType>
+				<xsd:sequence>
+					<xsd:element name="date" type="in:DateSoupleType"/>
+					<xsd:element  name="lieu"  type="in:LieuType"/>
+				</xsd:sequence>
+			</xsd:complexType>
+		</xsd:element>
+		
+		
+		<xsd:element name="enfants">
+			<xsd:complexType>
+				<xsd:sequence>
+					<xsd:element name="enfant" type="in:IndividuType" maxOccurs="unbounded" minOccurs="0"/>
+				</xsd:sequence>
+			</xsd:complexType>
+		</xsd:element>
+		
+
+</xsd:schema>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+
+  <rdfs:Class rdf:about="http://www.labd.org/2015/sport/schema#Sport">
+    <rdfs:label>sport</rdfs:label>
+    <rdfs:comment>Pratique méthodique de toute espèce d'exercices physiques</rdfs:comment>
+  </rdfs:Class>
+
+  <rdfs:Class rdf:about="http://www.labd.org/2015/sport/schema#SportCollectif">
+    <rdfs:label>sport collectif</rdfs:label>
+    <rdfs:comment>Sport qui oppose des équipes entre elles, et dont les titres sont attribués aux équipes</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://www.labd.org/2015/sport/schema#Sport"/>
+  </rdfs:Class>
+
+  <rdfs:Class rdf:about="http://www.labd.org/2015/sport/schema#SportIndividuel">
+    <rdfs:label>sport individuel</rdfs:label>
+    <rdfs:comment>Sport dont les titres sont attribués individuellement</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://www.labd.org/2015/sport/schema#Sport"/>
+  </rdfs:Class>
+
+  <rdfs:Class rdf:about="http://www.labd.org/2015/sport/schema#SportEquipe">
+    <rdfs:label>sport d'équipe</rdfs:label>
+    <rdfs:comment>Sport qui se joue en équipe, mais dont les titres sont attribués individuellement</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://www.labd.org/2015/sport/schema#Sport"/>
+  </rdfs:Class>
+
+  <rdfs:Class rdf:about="http://www.labd.org/2015/sport/schema#SportBallon">
+    <rdfs:label>sport de ballon</rdfs:label>
+    <rdfs:comment>Sport qui utilise un ballon</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://www.labd.org/2015/sport/schema#SportCollectif"/>
+  </rdfs:Class>
+
+  <rdfs:Class rdf:about="http://www.labd.org/2015/sport/schema#SportRaquette">
+    <rdfs:label>sport de raquettes</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://www.labd.org/2015/sport/schema#SportEquipe"/>
+    <rdfs:subClassOf rdf:resource="http://www.labd.org/2015/sport/schema#SportIndividuel"/>
+  </rdfs:Class>
+
+  <rdf:Property rdf:about="http://www.labd.org/2015/sport/schema#utiliseMateriel">
+    <rdfs:domain rdf:resource="http://www.labd.org/2015/sport/schema#Sport"/>
+    <rdfs:range rdf:resource="http://www.labd.org/2015/sport/schema#MaterielSportif"/>
+  </rdf:Property>
+
+  <rdfs:Class rdf:about="http://www.labd.org/2015/sport/schema#MaterielSportif">
+    <rdfs:label>materiel sportif</rdfs:label>
+    <rdfs:comment>Materiel utilisé pour pratiquer un sport</rdfs:comment>
+  </rdfs:Class>
+
+  <rdfs:Class rdf:about="http://www.labd.org/2015/sport/schema#Ballon">
+    <rdfs:label>ballon</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://www.labd.org/2015/sport/schema#MaterielSportif"/>
+  </rdfs:Class>
+
+  <rdf:Property rdf:about="http://www.labd.org/2015/sport/schema#formeBallon">
+    <rdfs:domain rdf:resource="http://www.labd.org/2015/sport/schema#Ballon"/>
+    <rdfs:comment>Sphérique ou ovale</rdfs:comment>
+  </rdf:Property>
+
+  <rdfs:Class rdf:about="http://www.labd.org/2015/sport/schema#Raquette">
+    <rdfs:label>raquette</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://www.labd.org/2015/sport/schema#MaterielSportif"/>
+  </rdfs:Class>
+
+  <rdfs:Class rdf:about="http://www.labd.org/2015/sport/schema#Velo">
+    <rdfs:label>vélo</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://www.labd.org/2015/sport/schema#MaterielSportif"/>
+  </rdfs:Class>
+
+  <rdf:Property rdf:about="http://www.labd.org/2015/sport/schema#nbJoueursParEquipe">
+    <rdfs:domain rdf:resource="http://www.labd.org/2015/sport/schema#SportCollectif"/>
+    <rdfs:label>Nombre de joueurs par équipe</rdfs:label>
+  </rdf:Property>
+
+  <rdf:Property rdf:about="http://www.labd.org/2015/sport/schema#sePratiqueSur">
+    <rdfs:domain rdf:resource="http://www.labd.org/2015/sport/schema#Sport"/>
+    <rdfs:range rdf:resource="http://www.labd.org/2015/sport/schema#TerrainDeSport"/>
+    <rdfs:label>lieu où se pratique le sport</rdfs:label>
+  </rdf:Property>
+
+  <rdfs:Class rdf:about="http://www.labd.org/2015/sport/schema#TerrainDeSport">
+    <rdfs:label>lieu de pratique d'un sport</rdfs:label>
+  </rdfs:Class>
+
+  <rdf:Property rdf:about="http://www.labd.org/2015/sport/schema#largeur">
+    <rdfs:domain rdf:resource="http://www.labd.org/2015/sport/schema#TerrainDeSport"/>
+  </rdf:Property>
+
+  <rdf:Property rdf:about="http://www.labd.org/2015/sport/schema#longueur">
+    <rdfs:domain rdf:resource="http://www.labd.org/2015/sport/schema#TerrainDeSport"/>
+  </rdf:Property>
+
+</rdf:RDF>

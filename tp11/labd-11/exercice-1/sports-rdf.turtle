@@ -1,0 +1,94 @@
+@prefix spi: <http://www.labd.org/2015/sport/instance#> .
+@prefix sps: <http://www.labd.org/2015/sport/schema#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+spi:Football
+  a sps:SportBallon ;
+  rdfs:label "Football"@fr, "Soccer"@en ;
+  sps:sePratiqueSur spi:TerrainFoot ;
+  sps:nbJoueursParEquipe "11" ;
+  sps:objectif "Mettre le ballon dans le but adverse, sans utiliser les bras" ;
+  sps:utiliseMateriel spi:BallonFoot ;
+  sps:match [
+    rdfs:label "Match de football" ;
+    sps:duree "2 périodes de 45 minutes90 minutes (2 fois 45 minutes), avec éventuellement des prolongations (2 fois 15 minutes) suivies (ou pas) de tirs au but"
+  ] ;
+  sps:competitions [
+    a rdf:Bag ;
+    rdf:_1 spi:MondialFoot ;
+    rdf:_2 spi:CAN ;
+    rdf:_3 "Ligue des Champions"
+  ] .
+
+spi:MondialFoot
+  rdfs:label "Coupe du monde de football"@fr ;
+  rdfs:comment """La coupe du monde de football se déroule tous les 4 ans et réunit les meilleurs équipes 
+     nationales de tous les continents""" .
+
+spi:CAN
+  rdfs:label "Coupe d'Afrique de Nations"@fr ;
+  rdfs:comment """La Coupe d'Afrique des nations, couramment abrégée en CAN, est la plus importante compétition internationale 
+     de football en Afrique. Elle est organisée par la Confédération africaine de football (CAF) 
+     et met aux prises les sélections nationales africaines. Cette compétition est disputée tous les deux ans""" .
+
+spi:BallonFoot
+  a sps:Ballon ;
+  rdfs:label "Ballon de football" ;
+  sps:formeBallon "Sphérique" .
+
+spi:TerrainFoot
+  a sps:TerrainDeSport ;
+  rdfs:label "Terrain de football" ;
+  sps:largeur [
+    sps:min "40" ;
+    sps:max "90"
+  ] ;
+  sps:longueur [
+    sps:min "90" ;
+    sps:max "120"
+  ] .
+
+spi:Basket
+  a sps:SportBallon ;
+  rdfs:label "Basketball" ;
+  sps:sePratiqueSur spi:TerrainBasket ;
+  sps:nbJoueursParEquipe "5" ;
+  sps:utiliseMateriel spi:BallonBasket, spi:PanierBasket ;
+  sps:objectif "Marquer des paniers" ;
+  sps:match [
+    rdfs:label "Match de Basket" ;
+    sps:duree [
+      a rdf:Alt ;
+      rdf:_1 "4 périodes de 10 minutes (règle de la FIBA)" ;
+      rdf:_2 "4 périodes de 12 minutes (règle de la NBA)"
+    ]
+  ] .
+
+spi:BallonBasket
+  a sps:Ballon ;
+  rdfs:label "Ballon de basketball" ;
+  sps:formeBallon "Sphérique" .
+
+spi:PanierBasket
+  a sps:MaterielSportif ;
+  rdfs:label "Panier de basketball" .
+
+spi:TerrainBasket
+  a sps:TerrainDeSport ;
+  rdfs:label "Terrain de basketball" .
+
+spi:Tennis
+  a sps:SportRaquette ;
+  rdfs:label "Tennis" ;
+  sps:objectif "Renvoyer la balle ... et faire en sorte que l'adversaire ne la renvoie pas" ;
+  sps:utiliseMateriel [
+    a sps:Raquette ;
+    rdfs:label "Raquette de tennis"
+  ] .
+
+spi:Course
+  a sps:SportIndividuel ;
+  rdfs:label "Course à pieds" ;
+  sps:objectif "Courir le plus vite possible, sur une distance fixe" ;
+  rdfs:comment "On distingue les courses sur une distance longue (fond), moyenne (demi-fond) ou courte (sprint)" .

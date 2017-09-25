@@ -1,0 +1,10 @@
+<ORDERS>
+  <ORDER ID="1">
+    <FILE>plant_order_1.xml</FILE>
+    <AMOUNT>663.20</AMOUT>
+  </ORDER>
+  <ORDER ID="2">
+    <FILE>plant_order_2.xml</FILE>
+    <AMOUNT>509.45</AMOUT>
+  </ORDER>
+</ORDERS>

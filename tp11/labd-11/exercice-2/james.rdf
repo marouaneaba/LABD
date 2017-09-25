@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" 
+         xmlns:foaf="http://xmlns.com/foaf/0.1/"
+         xml:base="http://bond007.org/RDF/mes_donnees.rdf">
+
+<foaf:Person rdf:about="#me">
+  <foaf:name>James Bond</foaf:name>
+  <foaf:homepage rdf:resource="http://bond007.org/"/>
+  <foaf:knows rdf:resource="#white"/>
+  <foaf:knows rdf:resource="#eve"/>
+  <foaf:knows rdf:resource="#auric"/>
+  <foaf:knows rdf:resource="#ernst"/>
+</foaf:Person>
+
+<foaf:Person rdf:about="#white">
+  <foaf:name>Bill White</foaf:name>
+  <foaf:homepage rdf:resource="http://white.uk/" />
+  <foaf:knows rdf:resource="#greene"/>
+</foaf:Person>
+
+<foaf:Person rdf:about="#greene">
+  <foaf:name>Dominic Greene</foaf:name>
+  <foaf:knows rdf:resource="#mitch"/>
+  <foaf:interest rdf:resource="http://quantum.com"/>
+  <foaf:workplaceHomepage rdf:resource="http://greene_planet.com"/>
+</foaf:Person>
+
+<foaf:Person rdf:about="#mitch">
+  <foaf:name>Craig Mitchell</foaf:name>
+  <foaf:interest rdf:resource="http://quantum.com"/>
+</foaf:Person>
+
+<foaf:Person rdf:about="#eve">
+  <foaf:name>Eve Moneypenny</foaf:name>
+  <foaf:knows rdf:resource="#me"/>
+  <foaf:phone>00 44 6 10 65 34 22</foaf:phone>
+</foaf:Person>
+
+<foaf:Person rdf:about="#auric">
+  <foaf:name>Auric Goldfinger</foaf:name>
+</foaf:Person>
+
+<foaf:Person rdf:about="#ernst">
+  <foaf:name>Ernst Stavro Blofeld</foaf:name>
+  <foaf:workplaceHomepage rdf:resource="http://spectre.com"/>
+</foaf:Person>
+
+<foaf:Group rdf:about="#badguys">
+  <foaf:member rdf:resource = "#auric"/>
+  <foaf:member rdf:resource = "#greene"/>
+  <foaf:member rdf:resource = "#ernst"/>
+</foaf:Group>
+
+<foaf:Organization rdf:about="#mi6">
+  <foaf:name>Secret Intelligence Service</foaf:name>
+  <foaf:nick>MI-6</foaf:nick>
+  <foaf:member rdf:resource = "#me"/>
+  <foaf:member rdf:resource = "#eve"/>
+</foaf:Organization>
+</rdf:RDF>

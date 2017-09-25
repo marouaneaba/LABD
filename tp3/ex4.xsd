@@ -1,0 +1,107 @@
+
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+
+<xsd:simpleType name="typeLongNom">
+	<xsd:restriction base ="xsd:string">
+		<xsd:enumeration value="LOSC Lille Metropole"/>
+		<xsd:enumeration value="Stade Rennais FC"/>
+		<xsd:enumeration value="Olympique Lyonnais"/>
+		<xsd:enumeration value="Olympique de Marseille"/>
+		<xsd:enumeration value="Paris Saint-Germain"/>
+		<xsd:enumeration value="Montpellier Herault SC"/>
+		<xsd:enumeration value="AS Saint-Etienne"/>
+		<xsd:enumeration value="Girondins de Bordeaux"/>
+		<xsd:enumeration value="FC Lorient"/>
+		<xsd:enumeration value="AC Ajaccio"/>
+		<xsd:enumeration value="FC de Sochaux Montbéliard"/>
+		<xsd:enumeration value="AS Monaco FC"/>
+		<xsd:enumeration value="OGC Nice"/>
+		<xsd:enumeration value="Valenciennes FC"/>
+		<xsd:enumeration value="Stade de Reims"/>
+		<xsd:enumeration value="SC Bastia"/>
+		<xsd:enumeration value="Evian TG FC"/>
+		<xsd:enumeration value="EA Guingamp"/>
+		<xsd:enumeration value="Toulouse FC"/>
+		<xsd:enumeration value="FC Nantes"/>
+	</xsd:restriction>
+</xsd:simpleType>
+
+<xsd:simpleType name="typeShortNom">
+	<xsd:restriction base ="xsd:string">
+		<xsd:enumeration value="LOSC"/>
+		<xsd:enumeration value="SRFC"/>
+		<xsd:enumeration value="OL"/>
+		<xsd:enumeration value="OM"/>
+		<xsd:enumeration value="PSG"/>
+		<xsd:enumeration value="MHSC"/>
+		<xsd:enumeration value="ASSE"/>
+		<xsd:enumeration value="GB"/>
+		<xsd:enumeration value="FCL"/>
+		<xsd:enumeration value="ACA"/>
+		<xsd:enumeration value="FCSM"/>
+		<xsd:enumeration value="ASMFC"/>
+		<xsd:enumeration value="OGCN"/>
+		<xsd:enumeration value="VAFC"/>
+		<xsd:enumeration value="SR"/>
+		<xsd:enumeration value="SCB"/>
+		<xsd:enumeration value="ETGFC"/>
+		<xsd:enumeration value="EAG"/>
+		<xsd:enumeration value="TFC"/>
+		<xsd:enumeration value="FCN"/>
+	</xsd:restriction>
+</xsd:simpleType>
+
+
+<xsd:complexType name ="typeClub">	
+	<xsd:attribute name = "nom" type="typeLongNom" />
+	<xsd:attribute name = "court" type="typeShortNom" />
+
+</xsd:complexType>
+
+<xsd:complexType name ="typeClubs" >
+<xsd:sequence>
+
+	<xsd:element name ="club" type="typeClub" minOccurs="20" maxOccurs="20"/>
+</xsd:sequence>
+
+</xsd:complexType>
+
+<xsd:simpleType name="typeScore">
+	<xsd:restriction base ="xsd:string">
+		<xsd:pattern value ="[0-9]* [0-9]*"/>
+	</xsd:restriction>
+</xsd:simpleType>
+
+<xsd:complexType name = "typeRencontre">
+	<xsd:sequence>
+		<xsd:element name="domicile" type="typeShortNom" minOccurs="1" maxOccurs="1"/>
+		<xsd:element name="exterieur" type="typeShortNom" minOccurs="1" maxOccurs="1"/>
+	</xsd:sequence>
+	<xsd:attribute name ="score" type="typeScore"/>
+</xsd:complexType>
+
+
+<xsd:complexType name="typeJournee">
+	<xsd:sequence>
+		<xsd:element name ="rencontre" type="typeRencontre" minOccurs="10" maxOccurs="10"/>
+	</xsd:sequence>
+	<xsd:attribute name="date" type="xsd:date"/>
+</xsd:complexType>
+
+<xsd:complexType name ="typeChampionnat">
+	<xsd:sequence>
+		<xsd:element name="clubs" type="typeClubs" minOccurs="1" maxOccurs="1"/>
+		<xsd:element name="journee" type="typeJournee" minOccurs="38" maxOccurs="38"/>
+	</xsd:sequence>
+</xsd:complexType>
+
+
+<xsd:element name ="championnat" type ="typeChampionnat"/>
+
+
+</xsd:schema>
+
+
+
+

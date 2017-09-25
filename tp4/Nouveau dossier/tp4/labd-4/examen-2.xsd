@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<A COMPLETER>
+
+  <xsd:element name="examen">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element maxOccurs="unbounded" 
+                ref="exercice" />
+       </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+
+
+ <xsd:element name="exercice" type="xsd:string"/>
+
+  
+</A COMPLETER>

@@ -1,0 +1,5 @@
+@prefix ns0: <http://www.labd.org/2015/sport/schema#> .
+
+<http://www.inria.fr/2007/09/11/humans.rdfs-instances#Harry> ns0:pratique <http://www.labd.org/2015/sport/instance#Football>, <http://www.labd.org/2015/sport/instance#Tennis> .
+<http://www.inria.fr/2007/09/11/humans.rdfs-instances#Catherine> ns0:pratique <http://www.labd.org/2015/sport/instance#Football>, <http://www.labd.org/2015/sport/instance#Basket> .
+<http://www.inria.fr/2007/09/11/humans.rdfs-instances#Laura> ns0:pratique <http://www.labd.org/2015/sport/instance#Basket> .

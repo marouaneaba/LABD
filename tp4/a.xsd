@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:Schema attributeFormDefault = "unqualifier"
+			elementFormDefault = "qualifies"
+			xlmns:xsd ="http://www.w3.org/2001/XMLSchema"
+			xlmns:b ="http://b.com"
+			targetNamespace ="http://www.a.com">
+			
+		<xsd:import namespace ="http://www.b.com" schemaLocation ="b.xsd"/>
+		
+		<xsd:element name ="A">
+			<xsd:sequence>
+				<xsd:element ref="b:B"/>
+			</xsd:sequence>
+		</xsd:element>
+		
+			
+</Schema>

@@ -1,0 +1,48 @@
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<xsd:element name="op">
+		<xsd:complexType >
+			<xsd:complexContent>
+					<xsd:extension  base ="ConsVarOp" >
+						<xsd:attribute name="val" type="opAttType" use="required"/>	
+					</xsd:extension>
+			</xsd:complexContent> 
+		</xsd:complexType>
+		</xsd:element>	
+		
+		
+		
+		<xsd:complexType name="ConsVarOp">
+			<xsd:sequence> 
+				<xsd:choice>
+					<xsd:element name="cons" type="xsd:decimal" />
+					<xsd:element name="var" type="xsd:string" />
+					<xsd:element ref="op"/>
+				</xsd:choice>
+				
+				<xsd:choice>
+					<xsd:element name="cons" type="xsd:decimal" />
+					<xsd:element name="var" type="xsd:string" />
+					<xsd:element ref="op" />
+				</xsd:choice>
+			</xsd:sequence>
+		</xsd:complexType>
+		
+		<xsd:simpleType name="opAttType">
+			<xsd:restriction base="xsd:token">
+				<xsd:enumeration value="*"/>
+				<xsd:enumeration value="+"/>
+				<xsd:enumeration value="-"/>
+				<xsd:enumeration value="/"/>
+			</xsd:restriction>	
+		</xsd:simpleType>
+		
+		<xsd:element name="expr">
+			<xsd:complexType >
+				<xsd:sequence>
+					<xsd:element ref="op"/>
+				</xsd:sequence>
+			</xsd:complexType>
+		</xsd:element>
+		
+		
+</xsd:schema>

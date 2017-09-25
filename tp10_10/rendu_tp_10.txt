@@ -1,0 +1,423 @@
+- il faut souvent declarer les prefix si ils ont pas par défault.
+- il faut souvent convertit les données avant l'utilisé rx: xs:integer(?y)>30
+- ou || c'est UNION
+		?x a rdf
+		?x rdfs ?t
+- rdf : property,class
+- rdfs : subclassof,les sous element
+- on peux faire plusieur FILTER
+- on peux declarer deux variable avec le meme type pour le comparis ex :
+			?x  a humans:Person
+				?y  a humans:Person
+				?x humans:shirtsize ?k	
+				?y humans:shirtsize ?ky
+			FILTER (xsd:integer(?k) = xsd:integer(?ky))
+			FILTER (?x != ?y )
+			- pour avoir l valeur de l'attribut lang(?t)
+
+exercice 1:
+Question1 :
+	retourner touts les x de type t
+	on a obtenu 33 résultat
+	se résultat ces le nombre d'élement le fichier contient.
+	
+	<result>
+		<binding name='x'><uri>http://www.inria.fr/2007/09/11/humans.rdfs-instances#John</uri></binding>
+		<binding name='t'><uri>http://www.inria.fr/2007/09/11/humans.rdfs#Person</uri></binding>
+	</result>
+	
+Question 2 :
+	la requéte chercher tout les X qui ont comme epouse Y.
+	on a obtenu 6 résultat.
+	<results>
+		<result>
+			<binding name='x'><uri>http://www.inria.fr/2007/09/11/humans.rdfs-instances#Eve</uri></binding>
+			<binding name='y'><uri>http://www.inria.fr/2007/09/11/humans.rdfs-instances#David</uri></binding>
+		</result>
+		<result>
+			<binding name='x'><uri>http://www.inria.fr/2007/09/11/humans.rdfs-instances#Flora</uri></binding>
+			<binding name='y'><uri>http://www.inria.fr/2007/09/11/humans.rdfs-instances#Gaston</uri></binding>
+		</result>
+		<result>
+			<binding name='x'><uri>http://www.inria.fr/2007/09/11/humans.rdfs-instances#Harry</uri></binding>
+			<binding name='y'><uri>http://www.inria.fr/2007/09/11/humans.rdfs-instances#Sophie</uri></binding>
+		</result>
+		<result>
+			<binding name='x'><uri>http://www.inria.fr/2007/09/11/humans.rdfs-instances#Jennifer</uri></binding>
+			<binding name='y'><uri>http://www.inria.fr/2007/09/11/humans.rdfs-instances#John</uri></binding>
+		</result>
+		<result>
+			<binding name='x'><uri>http://www.inria.fr/2007/09/11/humans.rdfs-instances#Karl</uri></binding>
+			<binding name='y'><uri>http://www.inria.fr/2007/09/11/humans.rdfs-instances#Catherine</uri></binding>
+		</result>
+		<result>
+			<binding name='x'><uri>http://www.inria.fr/2007/09/11/humans.rdfs-instances#William</uri></binding>
+			<binding name='y'><uri>http://www.inria.fr/2007/09/11/humans.rdfs-instances#Laura</uri></binding>
+		</result>
+	</results>
+
+Question 3	:
+	la propriété utilisé pour donner l'age d'une personne c'est "age".
+	
+	PREFIX humans: <http://www.inria.fr/2007/09/11/humans.rdfs#>
+		SELECT * WHERE {
+		?x humans:age ?y
+		FILTER (xsd:integer(?y) > 30) 
+	}
+	
+Question 4 : la propriété utilisé pour donner la pointure des chaussures des personne c'est "shoesize".
+4.1.
+	
+	PREFIX humans: <http://www.inria.fr/2007/09/11/humans.rdfs#>
+SELECT ?x ?t WHERE {
+?x rdf:type humans:Person 
+?x humans:shoesize ?t 
+}
+	on a obtenu 4 résultat:
+	
+<results>
+	<result>
+		<binding name='x'><uri>http://www.inria.fr/2007/09/11/humans.rdfs-instances#John</uri></binding>
+		<binding name='t'><literal>14</literal></binding>
+	</result>
+	<result>
+		<binding name='x'><uri>http://www.inria.fr/2007/09/11/humans.rdfs-instances#Karl</uri></binding>
+		<binding name='t'><literal>7</literal></binding>
+	</result>
+	<result>
+		<binding name='x'><uri>http://www.inria.fr/2007/09/11/humans.rdfs-instances#Mark</uri></binding>
+		<binding name='t'><literal>8</literal></binding>
+	</result>
+	<result>
+		<binding name='x'><uri>http://www.inria.fr/2007/09/11/humans.rdfs-instances#William</uri></binding>
+		<binding name='t'><literal>10</literal></binding>
+	</result>
+</results>
+
+4.2.
+
+	PREFIX humans: <http://www.inria.fr/2007/09/11/humans.rdfs#>
+	SELECT ?x ?t WHERE {
+	?x rdf:type humans:Person 
+	OPTIONAL { ?x humans:shoesize ?t }
+	}
+	
+	on a obtenu 7 résultat
+<results>
+		<result>
+			<binding name='x'><uri>http://www.inria.fr/2007/09/11/humans.rdfs-instances#David</uri></binding>
+		</result>
+		<result>
+			<binding name='x'><uri>http://www.inria.fr/2007/09/11/humans.rdfs-instances#Eve</uri></binding>
+		</result>
+		<result>
+			<binding name='x'><uri>http://www.inria.fr/2007/09/11/humans.rdfs-instances#John</uri></binding>
+			<binding name='t'><literal>14</literal></binding>
+		</result>
+		<result>
+			<binding name='x'><uri>http://www.inria.fr/2007/09/11/humans.rdfs-instances#Karl</uri></binding>
+			<binding name='t'><literal>7</literal></binding>
+		</result>
+		<result>
+			<binding name='x'><uri>http://www.inria.fr/2007/09/11/humans.rdfs-instances#Laura</uri></binding>
+		</result>
+		<result>
+			<binding name='x'><uri>http://www.inria.fr/2007/09/11/humans.rdfs-instances#Mark</uri></binding>
+			<binding name='t'><literal>8</literal></binding>
+		</result>
+		<result>
+			<binding name='x'><uri>http://www.inria.fr/2007/09/11/humans.rdfs-instances#William</uri></binding>
+			<binding name='t'><literal>10</literal></binding>
+		</result>
+</results>
+
+4.3.	
+
+	PREFIX humans: <http://www.inria.fr/2007/09/11/humans.rdfs#>
+SELECT ?x ?t WHERE {
+?x rdf:type humans:Person 
+OPTIONAL {?x humans:shoesize ?t  FILTER  (xsd:integer(?t) > 8) } 
+
+}
+	7 résultat .
+	
+4.4.
+PREFIX humans: <http://www.inria.fr/2007/09/11/humans.rdfs#>
+SELECT ?x ?t ?r WHERE {
+?x rdf:type humans:Person 
+{
+?x humans:shoesize ?t  
+FILTER  (xsd:integer(?t) > 8)
+} UNION {
+?x humans:shirtsize ?r
+FILTER  (xsd:integer(?r)>12) 
+}
+}
+
+on a obtenu 3 résultat 
+<results>
+	<result>
+		<binding name='x'><uri>http://www.inria.fr/2007/09/11/humans.rdfs-instances#John</uri></binding>
+		<binding name='t'><literal>14</literal></binding>
+	</result>
+	<result>
+		<binding name='x'><uri>http://www.inria.fr/2007/09/11/humans.rdfs-instances#William</uri></binding>
+		<binding name='t'><literal>10</literal></binding>
+	</result>
+	<result>
+		<binding name='x'><uri>http://www.inria.fr/2007/09/11/humans.rdfs-instances#William</uri></binding>
+		<binding name='r'><literal>13</literal></binding>
+	</result>
+</results>
+
+
+Question 5 :
+
+URI de John  <http://www.inria.fr/2007/09/11/humans.rdfs-instances#John>
+
+5.1.
+
+PREFIX humans: <http://www.inria.fr/2007/09/11/humans.rdfs#>
+SELECT * WHERE {
+?x rdf:type humans:Person 
+?x humans:shoesize ?s
+?x humans:shirtsize ?d
+?x humans:name ?n
+?x humans:age ?a
+?x humans:trouserssize ?t
+FILTER (?n = "John")
+}
+
+Résultat : 
+<results>
+	<result>
+		<binding name='x'><uri>http://www.inria.fr/2007/09/11/humans.rdfs-instances#John</uri></binding>
+		<binding name='s'><literal>14</literal></binding>
+		<binding name='d'><literal>12</literal></binding>
+		<binding name='n'><literal>John</literal></binding>
+		<binding name='a'><literal>37</literal></binding>
+		<binding name='t'><literal>44</literal></binding>
+	</result>
+</results>
+
+5.2.
+
+PREFIX humans: <http://www.inria.fr/2007/09/11/humans.rdfs#>
+DESCRIBE * WHERE {
+?x rdf:type humans:Person 
+?x humans:shoesize ?s
+?x humans:shirtsize ?d
+?x humans:name ?n
+?x humans:age ?a
+?x humans:trouserssize ?t
+FILTER (?n = "John")
+}
+
+Question 6 : la propriété utilisée pour doner les enfants d'une personne haschild
+
+6.1.
+**** avec l'utilisation hasChild :
+Harry le pére de John 
+Jack le pére de Harry
+Flora la mére de Pierre
+Gaston le pére de Pierre
+Gaston le pére de Jack
+Laura la mére de Cathrine
+
+**** avec l'utilisation hasMother :
+Catherine la mére de Lucas
+
+**** avc l'utilisation hasFather :
+John le pére de Mark
+
+6.2.
+	PREFIX humans: <http://www.inria.fr/2007/09/11/humans.rdfs#>
+SELECT ?x  WHERE {
+?x humans:hasChild ?c
+}
+
+6.3.
+	on a obtenu 5 résultat avec un doublons Gaston
+
+6.4.
+	on peux utiliser distinct 
+	
+	PREFIX humans: <http://www.inria.fr/2007/09/11/humans.rdfs#>
+SELECT DISTINCT ?x WHERE {
+?x humans:hasChild ?c
+}
+ 
+ on a obtenu 4 résultat ( pas de doublons ).
+ 
+6.5.
+
+	PREFIX humans: <http://www.inria.fr/2007/09/11/humans.rdfs#>
+SELECT  * WHERE {
+?x rdf:type humans:Man
+FILTER NOT EXISTS {?x humans:hasChild ?c}
+}
+
+6.6.
+
+PREFIX humans: <http://www.inria.fr/2007/09/11/humans.rdfs#>
+SELECT  ?x ?ch WHERE {
+?x rdf:type humans:Woman
+?x humans:hasSpouse ?m
+OPTIONAL {?x humans:hasChild ?ch}
+}
+
+<results>
+	<result>
+		<binding name='x'><uri>http://www.inria.fr/2007/09/11/humans.rdfs-instances#Flora</uri></binding>
+		<binding name='ch'><uri>http://www.inria.fr/2007/09/11/humans.rdfs-instances#Pierre</uri></binding>
+	</result>
+	<result>
+		<binding name='x'><uri>http://www.inria.fr/2007/09/11/humans.rdfs-instances#Jennifer</uri></binding>
+	</result>
+</results>
+
+
+Question 7 :
+	PREFIX humans: <http://www.inria.fr/2007/09/11/humans.rdfs#>
+SELECT  DISTINCT ?x ?y WHERE {
+?x rdf:type humans:Person
+?y rdf:type humans:Person
+?x humans:shirtsize ?f
+?y humans:shirtsize ?e
+
+FILTER (xsd:integer(?f) = xsd:integer(?e))
+FILTER (?x != ?y)
+}
+
+Karl & Mark ils ont la méme taille de chemise
+
+Question 8 :
+
+PREFIX humans: <http://www.inria.fr/2007/09/11/humans.rdfs#>
+SELECT  DISTINCT ?x ?y WHERE {
+?x humans:hasFriend ?y
+
+}
+
+Question 9 :
+
+PREFIX humans: <http://www.inria.fr/2007/09/11/humans.rdfs#>
+SELECT  distinct ?x  WHERE {
+?x a humans:Person
+FILTER not EXISTS {?x a humans:Man}
+}
+
+la requéte vas retourner l'ensemble des personne qui ne sont pas des Man.
+
+Exercice 2 :
+
+Question 1 :
+	la propriété age n'a pas de domaine , sa veux dire peux etre appliquer partout.
+Question 2 :
+
+	PREFIX humans: <http://www.inria.fr/2007/09/11/humans.rdfs#>
+		SELECT  ?x  WHERE {
+		?x a rdfs:Class
+	}
+
+Question 3 :
+	PREFIX humans: <http://www.inria.fr/2007/09/11/humans.rdfs#>
+		SELECT  ?x  ?t WHERE {
+
+		?x rdfs:subClassOf ?t
+	}
+
+Question 4 :
+	PREFIX humans: <http://www.inria.fr/2007/09/11/humans.rdfs#>
+		SELECT  ?x  ?t ?s WHERE {
+
+		?x a rdf:Property
+		?x rdfs:label ?t
+		?x rdfs:comment ?s
+		FILTER (xsd:string(?t) = "shoe size")
+	}
+
+Question 5 :
+	PREFIX humans: <http://www.inria.fr/2007/09/11/humans.rdfs#>
+		SELECT   ?t  WHERE {
+		humans:Person rdfs:label ?t
+	}
+
+Question 6 :
+?????????????????????????????????????????????????????????????????
+
+Exercice 3 :
+
+Question 1 :
+1.1 : 
+
+PREFIX humans: <http://www.inria.fr/2007/09/11/humans.rdfs#>
+SELECT ?x WHERE
+{
+ ?x a humans:Animal
+}
+
+----> pour la requéte pour obtenir toute les ressources de type Animal 0.
+
+PREFIX humans: <http://www.inria.fr/2007/09/11/humans.rdfs#>
+SELECT ?x WHERE
+{
+ ?x a humans:Person
+}
+
+----> pour la requéte pour obtenir toute les ressources de type Person 7.
+
+obtenir 7 personne et 0 animal.
+
+1.2 :
+	Au debut avant de charger en plus le shéma human_2007_09_11.rdfs
+	on connais pas les class et ces SubClassOf.
+	
+	dans le shéma human_2007_09_11.rdfs on remarque que class Man aussi la class Woman
+	sont des sous class de Person, c'est pour sa on obtinet plus de résultat .
+	
+	aussi dans le shéma human_2007_09_11.rdfs , on remarque que Person est une sous class d'Animal 
+	qui explique le résultat de la 2 éme requéte.
+
+Question 2 :
+	PREFIX humans: <http://www.inria.fr/2007/09/11/humans.rdfs#>
+		SELECT ?x ?e WHERE
+		{
+		?x a humans:Male
+		?x humans:hasSpouse ?e 
+	}
+	
+	une seule résultat car les autres sont déclarer comme des Personn et pas des Man.
+	<results>
+		<result>
+			<binding name='x'><uri>http://www.inria.fr/2007/09/11/humans.rdfs-instances#Harry</uri></binding>
+			<binding name='e'><uri>http://www.inria.fr/2007/09/11/humans.rdfs-instances#Sophie</uri></binding>
+		</result>
+	</results>
+
+Question 3 :
+
+Question 4 :
+
+
+
+
+
+
+
+
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	

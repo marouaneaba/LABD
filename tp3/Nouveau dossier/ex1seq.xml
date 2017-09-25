@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding ="UTF-8"?>
+
+
+<seq xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="ex1.xsd">
+
+	<heure>04:25:30</heure>
+    <reel>2.9</reel>
+    <caractere>seq</caractere>
+    <image>jpg</image>
+    <ISBN>1254789562345</ISBN>
+
+
+</seq>

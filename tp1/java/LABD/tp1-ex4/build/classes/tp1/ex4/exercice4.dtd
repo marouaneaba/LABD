@@ -1,0 +1,24 @@
+
+<!ELEMENT  deplacements (trajet,deplacement)>
+<!ELEMENT  deplacement ((pied*,prendre+,descendre+,correspandence*)+)>
+<!ELEMENT  pied (depart,destination,date,temp)>
+<!ELEMENT  depart (#PCDATA)>
+<!ELEMENT  destination (#PCDATA)>
+<!ELEMENT  date (jour,mois,hour)>
+<!ELEMENT  jour (#PCDATA)>
+<!ELEMENT  mois (#PCDATA)>
+<!ELEMENT  hour (#PCDATA)>
+<!ELEMENT  temp (hour,min)>
+<!ELEMENT  min (#PCDATA)>
+<!ELEMENT  prendre (transpole,date,temp)>
+<!ELEMENT  transpole (mode,ligne,direction)>
+<!ELEMENT  mode (#PCDATA)>
+<!ELEMENT  ligne (#PCDATA)>
+<!ELEMENT  direction (#PCDATA)>
+<!ELEMENT  descendre (arret,date)>
+<!ELEMENT  arret (#PCDATA)>
+<!ELEMENT  correspandence (temp)>
+<!ELEMENT  trajet (depart,destination,date,modeTranspole,preference,vitesseDeMarchePied,temp)>
+<!ELEMENT  modeTranspole (#PCDATA)>
+<!ELEMENT  preference (#PCDATA)>
+<!ELEMENT  vitesseDeMarchePied (#PCDATA)>

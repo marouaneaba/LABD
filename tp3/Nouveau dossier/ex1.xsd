@@ -1,0 +1,55 @@
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+  <xsd:simpleType name ="horaire">
+    <xsd:restriction base = "xsd:time">
+      <xsd:minInclusive value="02:30:00" />
+      <xsd:maxInclusive value="16:50:00" />
+    </xsd:restriction>
+  </xsd:simpleType>
+
+  <xsd:simpleType name ="nbr-reel">
+    <xsd:restriction base = "xsd:float">
+      <xsd:minInclusive value="-3476.4" />
+      <xsd:maxExclusive value="5" />
+    </xsd:restriction>
+  </xsd:simpleType>
+
+
+  <xsd:simpleType name ="ChaineCaractere">
+    <xsd:restriction base = "xsd:string">
+      <xsd:maxLength value="4" />
+    </xsd:restriction>
+  </xsd:simpleType>
+
+  <xsd:simpleType name ="type-image">
+    <xsd:restriction base = "xsd:string">
+      <xsd:enumeration value="jpg" />
+      <xsd:enumeration value="gif" />
+      <xsd:enumeration value="png" />
+    </xsd:restriction>
+  </xsd:simpleType>
+
+  <xsd:simpleType name ="ISBNnum">
+    <xsd:restriction base = "xsd:string">
+        <xsd:pattern value="[0-9]{13}"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+
+
+
+
+
+<xsd:element name ="seq">
+	<xsd:complexType>
+		<xsd:sequence>
+			<xsd:element name ="heure"  type="horaire"/>
+			<xsd:element name ="reel" type ="nbr-reel" />
+			<xsd:element name ="caractere" type ="ChaineCaractere" />
+			<xsd:element name ="image" type ="type-image" />
+			<xsd:element name ="ISBN" type ="ISBNnum" />
+		</xsd:sequence>
+	</xsd:complexType>
+</xsd:element>
+
+
+</xsd:schema>

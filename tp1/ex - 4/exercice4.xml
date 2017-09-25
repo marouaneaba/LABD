@@ -1,0 +1,164 @@
+
+<deplacement>
+	<trajet>
+
+		<depart> Seclin - Cnetre Hospitalier </depart>
+		<destination> Roubaix - Avenue Motte </destination> 
+		<date>
+			<jour> Mardi 22 </jour>
+			<mois> Janvier </mois>
+			<hour> 12h35 </hour>
+		</date>
+		<modeTranspole> Metro-Tramway-Bus-Car</modeTranspole>
+		<preference> Arriver le plus rapide </preference>
+
+
+		<vitesseDeMarchePied> Normale </vitesseDeMarchePied>
+		<temp> 
+			<hour> 1 </hour>
+			<min> 27 </min>
+		</temp>
+
+	</trajet>
+
+	
+	<pied> 
+			<depart> Seclin - Centre Hospitalier </depart>
+			<destination> Arrét Seclin - Hotel de ville </destination>
+			<date>
+				<jour> Mardi 22 </jour>
+				<mois> Janvier </Mois>
+				<hour> 12h35 </hour>
+			</date>
+			<temp> 
+				<hour> 0 </hour>
+				<min> 13 </min>
+			</temp>
+	</pied>
+		
+	<prendre> 
+			<Transpole>  
+				<mode> Bus </mode>
+				<ligne> 52 </ligne>
+				<direction> Lille - Porte des Postes  </Lille>
+			</Transpole>
+			<date>
+				<jour> Mardi 22 </jour>
+				<mois> Janvier </Mois>
+				<hour> 14h51 </hour>
+			</date>
+			<temp> 
+				<hour> 0 </hour>
+				<min> 23 </min>
+			</temp>	
+	</prendre>
+		
+	<descendre>  
+			<arret> Lille - CHR B Calmette </arret>
+			<date>
+				<jour> Mardi 22 </jour>
+				<mois> Janvier </Mois>
+				<hour> 15h14 </hour>
+			</date>
+	</descendre>
+		
+	<correspandence> 
+			<temp> 
+					<hour> 0 </hour>
+					<min> 4 </min>
+			</temp>				
+	</correspandence>
+		
+	<prendre> 
+			<Transpole>  
+				<mode> metro </mode>
+				<ligne> 1 </ligne>
+				<direction> Villeneuve d'asq - 4 Contons Grand Stade </Lille>
+			</Transpole>
+			<date>
+				<jour> Mardi 22 </jour>
+				<mois> Janvier </Mois>
+				<hour> 15h18 </hour>
+			</date>
+			<temp> 
+				<hour> 0 </hour>
+				<min> 3 </min>
+			</temp>	
+	</prendre>
+		
+	<descendre>  
+			<arret> Lille - Porte des Postes </arret>
+			<date>
+				<jour> Mardi 22 </jour>
+				<mois> Janvier </Mois>
+				<hour> 15h21 </hour>
+			</date>
+	</descendre>
+		
+	<correspandence> 
+			<temp> 
+					<hour> 0 </hour>
+					<min> 6 </min>
+			</temp>				
+	</correspandence>
+		
+	<prendre> 
+			<Transpole>  
+				<mode> metro </mode>
+				<ligne> 2 </ligne>
+				<direction> Tourcoing - CH Dron </Lille>
+			</Transpole>
+			<date>
+				<jour> Mardi 22 </jour>
+				<mois> Janvier </Mois>
+				<hour> 15h27 </hour>
+			</date>
+			<temp> 
+				<hour> 0 </hour>
+				<min> 25 </min>
+			</temp>	
+	</prendre>
+		
+	<descendre>  
+			<arret> Roubaix - Epeule Montesquieu </arret>
+			<date>
+				<jour> Mardi 22 </jour>
+				<mois> Janvier </Mois>
+				<hour> 15h52 </hour>
+			</date>
+	</descendre>
+		
+	<correspandence> 
+			<temp> 
+					<hour> 0 </hour>
+					<min> 4 </min>
+			</temp>				
+	</correspandence>
+		
+	<prendre> 
+			<Transpole>  
+				<mode> Bus </mode>
+				<ligne> 25 </ligne>
+				<direction> Roubaix - fraternite </Lille>
+			</Transpole>
+			<date>
+				<jour> Mardi 22 </jour>
+				<mois> Janvier </Mois>
+				<hour> 15h56 </hour>
+			</date>
+			<temp> 
+				<hour> 0 </hour>
+				<min> 9 </min>
+			</temp>	
+	</prendre>
+		
+	<descendre>  
+			<arret> Roubaix - Avenue Motte </arret>
+			<date>
+				<jour> Mardi 22 </jour>
+				<mois> Janvier </Mois>
+				<hour> 16h05 </hour>
+			</date>
+	</descendre>
+	
+</deplacement>

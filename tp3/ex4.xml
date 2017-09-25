@@ -1,0 +1,1611 @@
+<?xml version="1.0" encoding ="UTF-8"?>
+
+<championnat xsi:noNamespaceSchemaLocation="ex4maro.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" >
+
+	<clubs>
+		<club nom="LOSC Lille Metropole" court="LOSC"/>
+		<club nom ="Stade Rennais FC" court="SRFC"/>
+		<club nom="Olympique Lyonnais" court="OL"/>
+		<club nom="Olympique de Marseille" court="OM"/>
+		<club nom="Paris Saint-Germain" court="PSG"/>
+		<club nom="Montpellier Herault SC" court="MHSC"/>
+		<club nom="AS Saint-Etienne" court="ASSE"/>
+		<club nom="Girondins de Bordeaux" court="GB"/>
+		<club nom="FC Lorient" court="FCL"/>
+		<club nom="AC Ajaccio" court="ACA"/>
+		<club nom="FC de Sochaux Montbéliard" court="FCSM"/>
+		<club nom="AS Monaco FC" court="ASMFC"/>
+		<club nom="OGC Nice" court="OGCN"/>
+		<club nom="Valenciennes FC" court="VAFC"/>
+		<club nom="Stade de Reims" court="SR"/>
+		<club nom="SC Bastia" court="SCB"/>
+		<club nom ="Evian TG FC" court="ETGFC"/>
+		<club nom = "EA Guingamp" court ="EAG"/>
+		<club nom = "Toulouse FC" court="TFC"/>
+		<club nom ="FC Nantes" court="FCN"/>
+	</clubs>
+	
+
+		<journee date="2017-12-14">
+			<rencontre score = "1 2">
+				<domicile>ACA</domicile>
+				<exterieur>FCL</exterieur>
+			</rencontre>
+			<rencontre score = "1 2">
+				<domicile>GB</domicile>
+				<exterieur>VAFC</exterieur>
+			</rencontre>
+			<rencontre score = "1 1">
+				<domicile>ETGFC</domicile>
+				<exterieur>SR</exterieur>
+			</rencontre>
+			<rencontre score = "0 2">
+				<domicile>EAG</domicile>
+				<exterieur>ASMFC</exterieur>
+			</rencontre>
+			<rencontre score = "2 1">
+				<domicile>LOSC</domicile>
+				<exterieur>SCB</exterieur>
+			</rencontre>
+			<rencontre score = "2 2">
+				<domicile>OL</domicile>
+				<exterieur>OM</exterieur>
+			</rencontre>
+			<rencontre score = "0 1">
+				<domicile>MHSC</domicile>
+				<exterieur>ASSE</exterieur>
+			</rencontre>
+			<rencontre score = "1 2">
+				<domicile>FCN</domicile>
+				<exterieur>TFC</exterieur>
+			</rencontre>
+			<rencontre score = "1 0">
+				<domicile>OGCN</domicile>
+				<exterieur>FCSM</exterieur>
+			</rencontre>
+			<rencontre score = "1 3">
+				<domicile>SRFC</domicile>
+				<exterieur>PSG</exterieur>
+			</rencontre>
+		</journee>
+		<journee date="2017-12-21">
+			<rencontre score = "0 0">
+				<domicile>SCB</domicile>
+				<exterieur>MHSC</exterieur>
+			</rencontre>
+			<rencontre score = "2 2">
+				<domicile>FCL</domicile>
+				<exterieur>OL</exterieur>
+			</rencontre>
+			<rencontre score = "1 2">
+				<domicile>OM</domicile>
+				<exterieur>GB</exterieur>
+			</rencontre>
+			<rencontre score = "1 2">
+				<domicile>ASMFC</domicile>
+				<exterieur>VAFC</exterieur>
+			</rencontre>
+			<rencontre score = "3 1">
+				<domicile>OGCN</domicile>
+				<exterieur>ETGFC</exterieur>
+			</rencontre>
+			<rencontre score = "2 2">
+				<domicile>PSG</domicile>
+				<exterieur>LOSC</exterieur>
+			</rencontre>
+			<rencontre score = "4 1">
+				<domicile>SR</domicile>
+				<exterieur>ACA</exterieur>
+			</rencontre>
+			<rencontre score = "2 0">
+				<domicile>ASSE</domicile>
+				<exterieur>FCN</exterieur>
+			</rencontre>
+			<rencontre score = "2 1">
+				<domicile>FCSM</domicile>
+				<exterieur>SRFC</exterieur>
+			</rencontre>
+			<rencontre score = "0 0">
+				<domicile>TFC</domicile>
+				<exterieur>EAG</exterieur>
+			</rencontre>
+		</journee>
+		<journee date ="2017-01-11">
+			<rencontre score = "1 2">
+				<domicile>ACA</domicile>
+				<exterieur>PSG</exterieur>
+			</rencontre>
+			<rencontre score = "0 1">
+				<domicile>GB</domicile>
+				<exterieur>TFC</exterieur>
+			</rencontre>
+			<rencontre score = "1 2">
+				<domicile>ETGFC</domicile>
+				<exterieur>OM</exterieur>
+			</rencontre>
+			<rencontre score = "0 0">
+				<domicile>EAG</domicile>
+				<exterieur>ASSE</exterieur>
+			</rencontre>
+			<rencontre score = "1 2">
+				<domicile>LOSC</domicile>
+				<exterieur>SR</exterieur>
+			</rencontre>
+			<rencontre score = "2 0">
+				<domicile>OL</domicile>
+				<exterieur>FCSM</exterieur>
+			</rencontre>
+			<rencontre score = "1 1">
+				<domicile>MHSC</domicile>
+				<exterieur>ASMFC</exterieur>
+			</rencontre>
+			<rencontre score = "1 0">
+				<domicile>FCN</domicile>
+				<exterieur>FCL</exterieur>
+			</rencontre>
+			<rencontre score = "0 0">
+				<domicile>SRFC</domicile>
+				<exterieur>OGCN</exterieur>
+			</rencontre>
+			<rencontre score = "3 2">
+				<domicile>VAFC</domicile>
+				<exterieur>SCB</exterieur>
+			</rencontre>
+		</journee>
+		<journee date ="2017-01-18">
+			<rencontre score = "1 0">
+				<domicile>SCB</domicile>
+				<exterieur>GB</exterieur>
+			</rencontre>
+			<rencontre score = "2 0">
+				<domicile>FCL</domicile>
+				<exterieur>EAG</exterieur>
+			</rencontre>
+			<rencontre score = "2 0">
+				<domicile>OGCN</domicile>
+				<exterieur>ACA</exterieur>
+			</rencontre>
+			<rencontre score = "5 0">
+				<domicile>PSG</domicile>
+				<exterieur>FCN</exterieur>
+			</rencontre>
+			<rencontre score = "0 2">
+				<domicile>SR</domicile>
+				<exterieur>OL</exterieur>
+			</rencontre>
+			<rencontre score = "0 0">
+				<domicile>SRFC</domicile>
+				<exterieur>ETGFC</exterieur>
+			</rencontre>
+			<rencontre score = "2 0">
+				<domicile>ASSE</domicile>
+				<exterieur>LOSC</exterieur>
+			</rencontre>
+			<rencontre score = "0 2">
+				<domicile>FCSM</domicile>
+				<exterieur>MHSC</exterieur>
+			</rencontre>
+			<rencontre score = "0 2">
+				<domicile>TFC</domicile>
+				<exterieur>ASMFC</exterieur>
+			</rencontre>
+			<rencontre score = "0 2">
+				<domicile>FCSM</domicile>
+				<exterieur>MHSC</exterieur>
+			</rencontre>
+		</journee>
+		<journee date="2017-10-26">
+			<rencontre score="1 0">
+				<domicile>SCB</domicile>
+				<exterieur>OGCN</exterieur>
+			</rencontre>
+			<rencontre score="1 0">
+				<domicile>GB</domicile>
+				<exterieur>MHSC</exterieur>
+			</rencontre>
+			<rencontre score="2 1">
+				<domicile>EAG</domicile>
+				<exterieur>ACA</exterieur>
+			</rencontre>
+			<rencontre score="2 1">
+				<domicile>FCL</domicile>
+				<exterieur>FCSM</exterieur>
+			</rencontre>
+			<rencontre score="2 3">
+				<domicile>OM</domicile>
+				<exterieur>SR</exterieur>
+			</rencontre>
+			<rencontre score="2 1">
+				<domicile>ASMFC</domicile>
+				<exterieur>OL</exterieur>
+			</rencontre>
+			<rencontre score="0 1">
+				<domicile>FCN</domicile>
+				<exterieur>LOSC</exterieur>
+			</rencontre>
+			<rencontre score="2 2">
+				<domicile>ASSE</domicile>
+				<exterieur>PSG</exterieur>
+			</rencontre>
+			<rencontre score="0 5">
+				<domicile>TFC</domicile>
+				<exterieur>SRFC</exterieur>
+			</rencontre>
+			<rencontre score="0 1">
+				<domicile>VAFC</domicile>
+				<exterieur>ETGFC</exterieur>
+			</rencontre>
+		</journee>
+		<journee date="2017-11-02">
+			<rencontre score="1 3">
+				<domicile>ACA</domicile>
+				<exterieur>VAFC</exterieur>
+			</rencontre>
+			<rencontre score="2 1">
+				<domicile>ETGFC</domicile>
+				<exterieur>TFC</exterieur>
+			</rencontre>
+			<rencontre score="2 0">
+				<domicile>LOSC</domicile>
+				<exterieur>ASMFC</exterieur>
+			</rencontre>
+			<rencontre score="2 0">
+				<domicile>OL</domicile>
+				<exterieur>EAG</exterieur>
+			</rencontre>
+			<rencontre score="0 0">
+				<domicile>MHSC</domicile>
+				<exterieur>FCN</exterieur>
+			</rencontre>
+			<rencontre score="1 2">
+				<domicile>OGCN</domicile>
+				<exterieur>GB</exterieur>
+			</rencontre>
+			<rencontre score="4 0">
+				<domicile>PSG</domicile>
+				<exterieur>FCL</exterieur>
+			</rencontre>
+			<rencontre score="0 0">
+				<domicile>SR</domicile>
+				<exterieur>SCB</exterieur>
+			</rencontre>
+			<rencontre score="1 1">
+				<domicile>SRFC</domicile>
+				<exterieur>OM</exterieur>
+			</rencontre>
+			<rencontre score="0 0">
+				<domicile>FCSM</domicile>
+				<exterieur>ASSE</exterieur>
+			</rencontre>
+		</journee>
+     	<journee date="2017-10-26">
+			<rencontre score="1 0">
+				<domicile>SCB</domicile>
+				<exterieur>OGCN</exterieur>
+			</rencontre>
+			<rencontre score="1 0">
+				<domicile>GB</domicile>
+				<exterieur>MHSC</exterieur>
+			</rencontre>
+			<rencontre score="2 1">
+				<domicile>EAG</domicile>
+				<exterieur>ACA</exterieur>
+			</rencontre>
+			<rencontre score="2 1">
+				<domicile>FCL</domicile>
+				<exterieur>FCSM</exterieur>
+			</rencontre>
+			<rencontre score="2 3">
+				<domicile>OM</domicile>
+				<exterieur>SR</exterieur>
+			</rencontre>
+			<rencontre score="2 1">
+				<domicile>ASMFC</domicile>
+				<exterieur>OL</exterieur>
+			</rencontre>
+			<rencontre score="0 1">
+				<domicile>FCN</domicile>
+				<exterieur>LOSC</exterieur>
+			</rencontre>
+			<rencontre score="2 2">
+				<domicile>ASSE</domicile>
+				<exterieur>PSG</exterieur>
+			</rencontre>
+			<rencontre score="0 5">
+				<domicile>TFC</domicile>
+				<exterieur>SRFC</exterieur>
+			</rencontre>
+			<rencontre score="0 1">
+				<domicile>VAFC</domicile>
+				<exterieur>ETGFC</exterieur>
+			</rencontre>
+		</journee>
+		<journee date="2017-11-02">
+			<rencontre score="1 3">
+				<domicile>ACA</domicile>
+				<exterieur>VAFC</exterieur>
+			</rencontre>
+			<rencontre score="2 1">
+				<domicile>ETGFC</domicile>
+				<exterieur>TFC</exterieur>
+			</rencontre>
+			<rencontre score="2 0">
+				<domicile>LOSC</domicile>
+				<exterieur>ASMFC</exterieur>
+			</rencontre>
+			<rencontre score="2 0">
+				<domicile>OL</domicile>
+				<exterieur>EAG</exterieur>
+			</rencontre>
+			<rencontre score="0 0">
+				<domicile>MHSC</domicile>
+				<exterieur>FCN</exterieur>
+			</rencontre>
+			<rencontre score="1 2">
+				<domicile>OGCN</domicile>
+				<exterieur>GB</exterieur>
+			</rencontre>
+			<rencontre score="4 0">
+				<domicile>PSG</domicile>
+				<exterieur>FCL</exterieur>
+			</rencontre>
+			<rencontre score="0 0">
+				<domicile>SR</domicile>
+				<exterieur>SCB</exterieur>
+			</rencontre>
+			<rencontre score="1 1">
+				<domicile>SRFC</domicile>
+				<exterieur>OM</exterieur>
+			</rencontre>
+			<rencontre score="0 0">
+				<domicile>FCSM</domicile>
+				<exterieur>ASSE</exterieur>
+			</rencontre>
+		</journee><journee date="2013-10-26">
+			<rencontre score="1 0">
+				<domicile>SCB</domicile>
+				<exterieur>OGCN</exterieur>
+			</rencontre>
+			<rencontre score="1 0">
+				<domicile>GB</domicile>
+				<exterieur>MHSC</exterieur>
+			</rencontre>
+			<rencontre score="2 1">
+				<domicile>EAG</domicile>
+				<exterieur>ACA</exterieur>
+			</rencontre>
+			<rencontre score="2 1">
+				<domicile>FCL</domicile>
+				<exterieur>FCSM</exterieur>
+			</rencontre>
+			<rencontre score="2 3">
+				<domicile>OM</domicile>
+				<exterieur>SR</exterieur>
+			</rencontre>
+			<rencontre score="2 1">
+				<domicile>ASMFC</domicile>
+				<exterieur>OL</exterieur>
+			</rencontre>
+			<rencontre score="0 1">
+				<domicile>FCN</domicile>
+				<exterieur>LOSC</exterieur>
+			</rencontre>
+			<rencontre score="2 2">
+				<domicile>ASSE</domicile>
+				<exterieur>PSG</exterieur>
+			</rencontre>
+			<rencontre score="0 5">
+				<domicile>TFC</domicile>
+				<exterieur>SRFC</exterieur>
+			</rencontre>
+			<rencontre score="0 1">
+				<domicile>VAFC</domicile>
+				<exterieur>ETGFC</exterieur>
+			</rencontre>
+		</journee>
+		<journee date="2017-11-03">
+			<rencontre score="1 3">
+				<domicile>ACA</domicile>
+				<exterieur>VAFC</exterieur>
+			</rencontre>
+			<rencontre score="2 1">
+				<domicile>ETGFC</domicile>
+				<exterieur>TFC</exterieur>
+			</rencontre>
+			<rencontre score="2 0">
+				<domicile>LOSC</domicile>
+				<exterieur>ASMFC</exterieur>
+			</rencontre>
+			<rencontre score="2 0">
+				<domicile>OL</domicile>
+				<exterieur>EAG</exterieur>
+			</rencontre>
+			<rencontre score="0 0">
+				<domicile>MHSC</domicile>
+				<exterieur>FCN</exterieur>
+			</rencontre>
+			<rencontre score="1 2">
+				<domicile>OGCN</domicile>
+				<exterieur>GB</exterieur>
+			</rencontre>
+			<rencontre score="4 0">
+				<domicile>PSG</domicile>
+				<exterieur>FCL</exterieur>
+			</rencontre>
+			<rencontre score="0 0">
+				<domicile>SR</domicile>
+				<exterieur>SCB</exterieur>
+			</rencontre>
+			<rencontre score="1 1">
+				<domicile>SRFC</domicile>
+				<exterieur>OM</exterieur>
+			</rencontre>
+			<rencontre score="0 0">
+				<domicile>FCSM</domicile>
+				<exterieur>ASSE</exterieur>
+			</rencontre>
+		</journee><journee date="2013-10-26">
+			<rencontre score="1 0">
+				<domicile>SCB</domicile>
+				<exterieur>OGCN</exterieur>
+			</rencontre>
+			<rencontre score="1 0">
+				<domicile>GB</domicile>
+				<exterieur>MHSC</exterieur>
+			</rencontre>
+			<rencontre score="2 1">
+				<domicile>EAG</domicile>
+				<exterieur>ACA</exterieur>
+			</rencontre>
+			<rencontre score="2 1">
+				<domicile>FCL</domicile>
+				<exterieur>FCSM</exterieur>
+			</rencontre>
+			<rencontre score="2 3">
+				<domicile>OM</domicile>
+				<exterieur>SR</exterieur>
+			</rencontre>
+			<rencontre score="2 1">
+				<domicile>ASMFC</domicile>
+				<exterieur>OL</exterieur>
+			</rencontre>
+			<rencontre score="0 1">
+				<domicile>FCN</domicile>
+				<exterieur>LOSC</exterieur>
+			</rencontre>
+			<rencontre score="2 2">
+				<domicile>ASSE</domicile>
+				<exterieur>PSG</exterieur>
+			</rencontre>
+			<rencontre score="0 5">
+				<domicile>TFC</domicile>
+				<exterieur>SRFC</exterieur>
+			</rencontre>
+			<rencontre score="0 1">
+				<domicile>VAFC</domicile>
+				<exterieur>ETGFC</exterieur>
+			</rencontre>
+		</journee>
+		<journee date="2017-11-04">
+			<rencontre score="1 3">
+				<domicile>ACA</domicile>
+				<exterieur>VAFC</exterieur>
+			</rencontre>
+			<rencontre score="2 1">
+				<domicile>ETGFC</domicile>
+				<exterieur>TFC</exterieur>
+			</rencontre>
+			<rencontre score="2 0">
+				<domicile>LOSC</domicile>
+				<exterieur>ASMFC</exterieur>
+			</rencontre>
+			<rencontre score="2 0">
+				<domicile>OL</domicile>
+				<exterieur>EAG</exterieur>
+			</rencontre>
+			<rencontre score="0 0">
+				<domicile>MHSC</domicile>
+				<exterieur>FCN</exterieur>
+			</rencontre>
+			<rencontre score="1 2">
+				<domicile>OGCN</domicile>
+				<exterieur>GB</exterieur>
+			</rencontre>
+			<rencontre score="4 0">
+				<domicile>PSG</domicile>
+				<exterieur>FCL</exterieur>
+			</rencontre>
+			<rencontre score="0 0">
+				<domicile>SR</domicile>
+				<exterieur>SCB</exterieur>
+			</rencontre>
+			<rencontre score="1 1">
+				<domicile>SRFC</domicile>
+				<exterieur>OM</exterieur>
+			</rencontre>
+			<rencontre score="0 0">
+				<domicile>FCSM</domicile>
+				<exterieur>ASSE</exterieur>
+			</rencontre>
+		</journee><journee date="2013-10-26">
+			<rencontre score="1 0">
+				<domicile>SCB</domicile>
+				<exterieur>OGCN</exterieur>
+			</rencontre>
+			<rencontre score="1 0">
+				<domicile>GB</domicile>
+				<exterieur>MHSC</exterieur>
+			</rencontre>
+			<rencontre score="2 1">
+				<domicile>EAG</domicile>
+				<exterieur>ACA</exterieur>
+			</rencontre>
+			<rencontre score="2 1">
+				<domicile>FCL</domicile>
+				<exterieur>FCSM</exterieur>
+			</rencontre>
+			<rencontre score="2 3">
+				<domicile>OM</domicile>
+				<exterieur>SR</exterieur>
+			</rencontre>
+			<rencontre score="2 1">
+				<domicile>ASMFC</domicile>
+				<exterieur>OL</exterieur>
+			</rencontre>
+			<rencontre score="0 1">
+				<domicile>FCN</domicile>
+				<exterieur>LOSC</exterieur>
+			</rencontre>
+			<rencontre score="2 2">
+				<domicile>ASSE</domicile>
+				<exterieur>PSG</exterieur>
+			</rencontre>
+			<rencontre score="0 5">
+				<domicile>TFC</domicile>
+				<exterieur>SRFC</exterieur>
+			</rencontre>
+			<rencontre score="0 1">
+				<domicile>VAFC</domicile>
+				<exterieur>ETGFC</exterieur>
+			</rencontre>
+		</journee>
+		<journee date="2017-11-05">
+			<rencontre score="1 3">
+				<domicile>ACA</domicile>
+				<exterieur>VAFC</exterieur>
+			</rencontre>
+			<rencontre score="2 1">
+				<domicile>ETGFC</domicile>
+				<exterieur>TFC</exterieur>
+			</rencontre>
+			<rencontre score="2 0">
+				<domicile>LOSC</domicile>
+				<exterieur>ASMFC</exterieur>
+			</rencontre>
+			<rencontre score="2 0">
+				<domicile>OL</domicile>
+				<exterieur>EAG</exterieur>
+			</rencontre>
+			<rencontre score="0 0">
+				<domicile>MHSC</domicile>
+				<exterieur>FCN</exterieur>
+			</rencontre>
+			<rencontre score="1 2">
+				<domicile>OGCN</domicile>
+				<exterieur>GB</exterieur>
+			</rencontre>
+			<rencontre score="4 0">
+				<domicile>PSG</domicile>
+				<exterieur>FCL</exterieur>
+			</rencontre>
+			<rencontre score="0 0">
+				<domicile>SR</domicile>
+				<exterieur>SCB</exterieur>
+			</rencontre>
+			<rencontre score="1 1">
+				<domicile>SRFC</domicile>
+				<exterieur>OM</exterieur>
+			</rencontre>
+			<rencontre score="0 0">
+				<domicile>FCSM</domicile>
+				<exterieur>ASSE</exterieur>
+			</rencontre>
+		</journee><journee date="2013-10-26">
+			<rencontre score="1 0">
+				<domicile>SCB</domicile>
+				<exterieur>OGCN</exterieur>
+			</rencontre>
+			<rencontre score="1 0">
+				<domicile>GB</domicile>
+				<exterieur>MHSC</exterieur>
+			</rencontre>
+			<rencontre score="2 1">
+				<domicile>EAG</domicile>
+				<exterieur>ACA</exterieur>
+			</rencontre>
+			<rencontre score="2 1">
+				<domicile>FCL</domicile>
+				<exterieur>FCSM</exterieur>
+			</rencontre>
+			<rencontre score="2 3">
+				<domicile>OM</domicile>
+				<exterieur>SR</exterieur>
+			</rencontre>
+			<rencontre score="2 1">
+				<domicile>ASMFC</domicile>
+				<exterieur>OL</exterieur>
+			</rencontre>
+			<rencontre score="0 1">
+				<domicile>FCN</domicile>
+				<exterieur>LOSC</exterieur>
+			</rencontre>
+			<rencontre score="2 2">
+				<domicile>ASSE</domicile>
+				<exterieur>PSG</exterieur>
+			</rencontre>
+			<rencontre score="0 5">
+				<domicile>TFC</domicile>
+				<exterieur>SRFC</exterieur>
+			</rencontre>
+			<rencontre score="0 1">
+				<domicile>VAFC</domicile>
+				<exterieur>ETGFC</exterieur>
+			</rencontre>
+		</journee>
+		<journee date="2017-11-06">
+			<rencontre score="1 3">
+				<domicile>ACA</domicile>
+				<exterieur>VAFC</exterieur>
+			</rencontre>
+			<rencontre score="2 1">
+				<domicile>ETGFC</domicile>
+				<exterieur>TFC</exterieur>
+			</rencontre>
+			<rencontre score="2 0">
+				<domicile>LOSC</domicile>
+				<exterieur>ASMFC</exterieur>
+			</rencontre>
+			<rencontre score="2 0">
+				<domicile>OL</domicile>
+				<exterieur>EAG</exterieur>
+			</rencontre>
+			<rencontre score="0 0">
+				<domicile>MHSC</domicile>
+				<exterieur>FCN</exterieur>
+			</rencontre>
+			<rencontre score="1 2">
+				<domicile>OGCN</domicile>
+				<exterieur>GB</exterieur>
+			</rencontre>
+			<rencontre score="4 0">
+				<domicile>PSG</domicile>
+				<exterieur>FCL</exterieur>
+			</rencontre>
+			<rencontre score="0 0">
+				<domicile>SR</domicile>
+				<exterieur>SCB</exterieur>
+			</rencontre>
+			<rencontre score="1 1">
+				<domicile>SRFC</domicile>
+				<exterieur>OM</exterieur>
+			</rencontre>
+			<rencontre score="0 0">
+				<domicile>FCSM</domicile>
+				<exterieur>ASSE</exterieur>
+			</rencontre>
+		</journee><journee date="2013-10-26">
+			<rencontre score="1 0">
+				<domicile>SCB</domicile>
+				<exterieur>OGCN</exterieur>
+			</rencontre>
+			<rencontre score="1 0">
+				<domicile>GB</domicile>
+				<exterieur>MHSC</exterieur>
+			</rencontre>
+			<rencontre score="2 1">
+				<domicile>EAG</domicile>
+				<exterieur>ACA</exterieur>
+			</rencontre>
+			<rencontre score="2 1">
+				<domicile>FCL</domicile>
+				<exterieur>FCSM</exterieur>
+			</rencontre>
+			<rencontre score="2 3">
+				<domicile>OM</domicile>
+				<exterieur>SR</exterieur>
+			</rencontre>
+			<rencontre score="2 1">
+				<domicile>ASMFC</domicile>
+				<exterieur>OL</exterieur>
+			</rencontre>
+			<rencontre score="0 1">
+				<domicile>FCN</domicile>
+				<exterieur>LOSC</exterieur>
+			</rencontre>
+			<rencontre score="2 2">
+				<domicile>ASSE</domicile>
+				<exterieur>PSG</exterieur>
+			</rencontre>
+			<rencontre score="0 5">
+				<domicile>TFC</domicile>
+				<exterieur>SRFC</exterieur>
+			</rencontre>
+			<rencontre score="0 1">
+				<domicile>VAFC</domicile>
+				<exterieur>ETGFC</exterieur>
+			</rencontre>
+		</journee>
+		<journee date="2017-11-07">
+			<rencontre score="1 3">
+				<domicile>ACA</domicile>
+				<exterieur>VAFC</exterieur>
+			</rencontre>
+			<rencontre score="2 1">
+				<domicile>ETGFC</domicile>
+				<exterieur>TFC</exterieur>
+			</rencontre>
+			<rencontre score="2 0">
+				<domicile>LOSC</domicile>
+				<exterieur>ASMFC</exterieur>
+			</rencontre>
+			<rencontre score="2 0">
+				<domicile>OL</domicile>
+				<exterieur>EAG</exterieur>
+			</rencontre>
+			<rencontre score="0 0">
+				<domicile>MHSC</domicile>
+				<exterieur>FCN</exterieur>
+			</rencontre>
+			<rencontre score="1 2">
+				<domicile>OGCN</domicile>
+				<exterieur>GB</exterieur>
+			</rencontre>
+			<rencontre score="4 0">
+				<domicile>PSG</domicile>
+				<exterieur>FCL</exterieur>
+			</rencontre>
+			<rencontre score="0 0">
+				<domicile>SR</domicile>
+				<exterieur>SCB</exterieur>
+			</rencontre>
+			<rencontre score="1 1">
+				<domicile>SRFC</domicile>
+				<exterieur>OM</exterieur>
+			</rencontre>
+			<rencontre score="0 0">
+				<domicile>FCSM</domicile>
+				<exterieur>ASSE</exterieur>
+			</rencontre>
+		</journee><journee date="2013-10-26">
+			<rencontre score="1 0">
+				<domicile>SCB</domicile>
+				<exterieur>OGCN</exterieur>
+			</rencontre>
+			<rencontre score="1 0">
+				<domicile>GB</domicile>
+				<exterieur>MHSC</exterieur>
+			</rencontre>
+			<rencontre score="2 1">
+				<domicile>EAG</domicile>
+				<exterieur>ACA</exterieur>
+			</rencontre>
+			<rencontre score="2 1">
+				<domicile>FCL</domicile>
+				<exterieur>FCSM</exterieur>
+			</rencontre>
+			<rencontre score="2 3">
+				<domicile>OM</domicile>
+				<exterieur>SR</exterieur>
+			</rencontre>
+			<rencontre score="2 1">
+				<domicile>ASMFC</domicile>
+				<exterieur>OL</exterieur>
+			</rencontre>
+			<rencontre score="0 1">
+				<domicile>FCN</domicile>
+				<exterieur>LOSC</exterieur>
+			</rencontre>
+			<rencontre score="2 2">
+				<domicile>ASSE</domicile>
+				<exterieur>PSG</exterieur>
+			</rencontre>
+			<rencontre score="0 5">
+				<domicile>TFC</domicile>
+				<exterieur>SRFC</exterieur>
+			</rencontre>
+			<rencontre score="0 1">
+				<domicile>VAFC</domicile>
+				<exterieur>ETGFC</exterieur>
+			</rencontre>
+		</journee>
+		<journee date="2017-11-08">
+			<rencontre score="1 3">
+				<domicile>ACA</domicile>
+				<exterieur>VAFC</exterieur>
+			</rencontre>
+			<rencontre score="2 1">
+				<domicile>ETGFC</domicile>
+				<exterieur>TFC</exterieur>
+			</rencontre>
+			<rencontre score="2 0">
+				<domicile>LOSC</domicile>
+				<exterieur>ASMFC</exterieur>
+			</rencontre>
+			<rencontre score="2 0">
+				<domicile>OL</domicile>
+				<exterieur>EAG</exterieur>
+			</rencontre>
+			<rencontre score="0 0">
+				<domicile>MHSC</domicile>
+				<exterieur>FCN</exterieur>
+			</rencontre>
+			<rencontre score="1 2">
+				<domicile>OGCN</domicile>
+				<exterieur>GB</exterieur>
+			</rencontre>
+			<rencontre score="4 0">
+				<domicile>PSG</domicile>
+				<exterieur>FCL</exterieur>
+			</rencontre>
+			<rencontre score="0 0">
+				<domicile>SR</domicile>
+				<exterieur>SCB</exterieur>
+			</rencontre>
+			<rencontre score="1 1">
+				<domicile>SRFC</domicile>
+				<exterieur>OM</exterieur>
+			</rencontre>
+			<rencontre score="0 0">
+				<domicile>FCSM</domicile>
+				<exterieur>ASSE</exterieur>
+			</rencontre>
+		</journee><journee date="2013-10-26">
+			<rencontre score="1 0">
+				<domicile>SCB</domicile>
+				<exterieur>OGCN</exterieur>
+			</rencontre>
+			<rencontre score="1 0">
+				<domicile>GB</domicile>
+				<exterieur>MHSC</exterieur>
+			</rencontre>
+			<rencontre score="2 1">
+				<domicile>EAG</domicile>
+				<exterieur>ACA</exterieur>
+			</rencontre>
+			<rencontre score="2 1">
+				<domicile>FCL</domicile>
+				<exterieur>FCSM</exterieur>
+			</rencontre>
+			<rencontre score="2 3">
+				<domicile>OM</domicile>
+				<exterieur>SR</exterieur>
+			</rencontre>
+			<rencontre score="2 1">
+				<domicile>ASMFC</domicile>
+				<exterieur>OL</exterieur>
+			</rencontre>
+			<rencontre score="0 1">
+				<domicile>FCN</domicile>
+				<exterieur>LOSC</exterieur>
+			</rencontre>
+			<rencontre score="2 2">
+				<domicile>ASSE</domicile>
+				<exterieur>PSG</exterieur>
+			</rencontre>
+			<rencontre score="0 5">
+				<domicile>TFC</domicile>
+				<exterieur>SRFC</exterieur>
+			</rencontre>
+			<rencontre score="0 1">
+				<domicile>VAFC</domicile>
+				<exterieur>ETGFC</exterieur>
+			</rencontre>
+		</journee>
+		<journee date="2017-11-09">
+			<rencontre score="1 3">
+				<domicile>ACA</domicile>
+				<exterieur>VAFC</exterieur>
+			</rencontre>
+			<rencontre score="2 1">
+				<domicile>ETGFC</domicile>
+				<exterieur>TFC</exterieur>
+			</rencontre>
+			<rencontre score="2 0">
+				<domicile>LOSC</domicile>
+				<exterieur>ASMFC</exterieur>
+			</rencontre>
+			<rencontre score="2 0">
+				<domicile>OL</domicile>
+				<exterieur>EAG</exterieur>
+			</rencontre>
+			<rencontre score="0 0">
+				<domicile>MHSC</domicile>
+				<exterieur>FCN</exterieur>
+			</rencontre>
+			<rencontre score="1 2">
+				<domicile>OGCN</domicile>
+				<exterieur>GB</exterieur>
+			</rencontre>
+			<rencontre score="4 0">
+				<domicile>PSG</domicile>
+				<exterieur>FCL</exterieur>
+			</rencontre>
+			<rencontre score="0 0">
+				<domicile>SR</domicile>
+				<exterieur>SCB</exterieur>
+			</rencontre>
+			<rencontre score="1 1">
+				<domicile>SRFC</domicile>
+				<exterieur>OM</exterieur>
+			</rencontre>
+			<rencontre score="0 0">
+				<domicile>FCSM</domicile>
+				<exterieur>ASSE</exterieur>
+			</rencontre>
+		</journee><journee date="2013-10-26">
+			<rencontre score="1 0">
+				<domicile>SCB</domicile>
+				<exterieur>OGCN</exterieur>
+			</rencontre>
+			<rencontre score="1 0">
+				<domicile>GB</domicile>
+				<exterieur>MHSC</exterieur>
+			</rencontre>
+			<rencontre score="2 1">
+				<domicile>EAG</domicile>
+				<exterieur>ACA</exterieur>
+			</rencontre>
+			<rencontre score="2 1">
+				<domicile>FCL</domicile>
+				<exterieur>FCSM</exterieur>
+			</rencontre>
+			<rencontre score="2 3">
+				<domicile>OM</domicile>
+				<exterieur>SR</exterieur>
+			</rencontre>
+			<rencontre score="2 1">
+				<domicile>ASMFC</domicile>
+				<exterieur>OL</exterieur>
+			</rencontre>
+			<rencontre score="0 1">
+				<domicile>FCN</domicile>
+				<exterieur>LOSC</exterieur>
+			</rencontre>
+			<rencontre score="2 2">
+				<domicile>ASSE</domicile>
+				<exterieur>PSG</exterieur>
+			</rencontre>
+			<rencontre score="0 5">
+				<domicile>TFC</domicile>
+				<exterieur>SRFC</exterieur>
+			</rencontre>
+			<rencontre score="0 1">
+				<domicile>VAFC</domicile>
+				<exterieur>ETGFC</exterieur>
+			</rencontre>
+		</journee>
+		<journee date="2017-11-13">
+			<rencontre score="1 3">
+				<domicile>ACA</domicile>
+				<exterieur>VAFC</exterieur>
+			</rencontre>
+			<rencontre score="2 1">
+				<domicile>ETGFC</domicile>
+				<exterieur>TFC</exterieur>
+			</rencontre>
+			<rencontre score="2 0">
+				<domicile>LOSC</domicile>
+				<exterieur>ASMFC</exterieur>
+			</rencontre>
+			<rencontre score="2 0">
+				<domicile>OL</domicile>
+				<exterieur>EAG</exterieur>
+			</rencontre>
+			<rencontre score="0 0">
+				<domicile>MHSC</domicile>
+				<exterieur>FCN</exterieur>
+			</rencontre>
+			<rencontre score="1 2">
+				<domicile>OGCN</domicile>
+				<exterieur>GB</exterieur>
+			</rencontre>
+			<rencontre score="4 0">
+				<domicile>PSG</domicile>
+				<exterieur>FCL</exterieur>
+			</rencontre>
+			<rencontre score="0 0">
+				<domicile>SR</domicile>
+				<exterieur>SCB</exterieur>
+			</rencontre>
+			<rencontre score="1 1">
+				<domicile>SRFC</domicile>
+				<exterieur>OM</exterieur>
+			</rencontre>
+			<rencontre score="0 0">
+				<domicile>FCSM</domicile>
+				<exterieur>ASSE</exterieur>
+			</rencontre>
+		</journee><journee date="2013-10-26">
+			<rencontre score="1 0">
+				<domicile>SCB</domicile>
+				<exterieur>OGCN</exterieur>
+			</rencontre>
+			<rencontre score="1 0">
+				<domicile>GB</domicile>
+				<exterieur>MHSC</exterieur>
+			</rencontre>
+			<rencontre score="2 1">
+				<domicile>EAG</domicile>
+				<exterieur>ACA</exterieur>
+			</rencontre>
+			<rencontre score="2 1">
+				<domicile>FCL</domicile>
+				<exterieur>FCSM</exterieur>
+			</rencontre>
+			<rencontre score="2 3">
+				<domicile>OM</domicile>
+				<exterieur>SR</exterieur>
+			</rencontre>
+			<rencontre score="2 1">
+				<domicile>ASMFC</domicile>
+				<exterieur>OL</exterieur>
+			</rencontre>
+			<rencontre score="0 1">
+				<domicile>FCN</domicile>
+				<exterieur>LOSC</exterieur>
+			</rencontre>
+			<rencontre score="2 2">
+				<domicile>ASSE</domicile>
+				<exterieur>PSG</exterieur>
+			</rencontre>
+			<rencontre score="0 5">
+				<domicile>TFC</domicile>
+				<exterieur>SRFC</exterieur>
+			</rencontre>
+			<rencontre score="0 1">
+				<domicile>VAFC</domicile>
+				<exterieur>ETGFC</exterieur>
+			</rencontre>
+		</journee>
+		<journee date="2017-11-14">
+			<rencontre score="1 3">
+				<domicile>ACA</domicile>
+				<exterieur>VAFC</exterieur>
+			</rencontre>
+			<rencontre score="2 1">
+				<domicile>ETGFC</domicile>
+				<exterieur>TFC</exterieur>
+			</rencontre>
+			<rencontre score="2 0">
+				<domicile>LOSC</domicile>
+				<exterieur>ASMFC</exterieur>
+			</rencontre>
+			<rencontre score="2 0">
+				<domicile>OL</domicile>
+				<exterieur>EAG</exterieur>
+			</rencontre>
+			<rencontre score="0 0">
+				<domicile>MHSC</domicile>
+				<exterieur>FCN</exterieur>
+			</rencontre>
+			<rencontre score="1 2">
+				<domicile>OGCN</domicile>
+				<exterieur>GB</exterieur>
+			</rencontre>
+			<rencontre score="4 0">
+				<domicile>PSG</domicile>
+				<exterieur>FCL</exterieur>
+			</rencontre>
+			<rencontre score="0 0">
+				<domicile>SR</domicile>
+				<exterieur>SCB</exterieur>
+			</rencontre>
+			<rencontre score="1 1">
+				<domicile>SRFC</domicile>
+				<exterieur>OM</exterieur>
+			</rencontre>
+			<rencontre score="0 0">
+				<domicile>FCSM</domicile>
+				<exterieur>ASSE</exterieur>
+			</rencontre>
+		</journee><journee date="2013-10-26">
+			<rencontre score="1 0">
+				<domicile>SCB</domicile>
+				<exterieur>OGCN</exterieur>
+			</rencontre>
+			<rencontre score="1 0">
+				<domicile>GB</domicile>
+				<exterieur>MHSC</exterieur>
+			</rencontre>
+			<rencontre score="2 1">
+				<domicile>EAG</domicile>
+				<exterieur>ACA</exterieur>
+			</rencontre>
+			<rencontre score="2 1">
+				<domicile>FCL</domicile>
+				<exterieur>FCSM</exterieur>
+			</rencontre>
+			<rencontre score="2 3">
+				<domicile>OM</domicile>
+				<exterieur>SR</exterieur>
+			</rencontre>
+			<rencontre score="2 1">
+				<domicile>ASMFC</domicile>
+				<exterieur>OL</exterieur>
+			</rencontre>
+			<rencontre score="0 1">
+				<domicile>FCN</domicile>
+				<exterieur>LOSC</exterieur>
+			</rencontre>
+			<rencontre score="2 2">
+				<domicile>ASSE</domicile>
+				<exterieur>PSG</exterieur>
+			</rencontre>
+			<rencontre score="0 5">
+				<domicile>TFC</domicile>
+				<exterieur>SRFC</exterieur>
+			</rencontre>
+			<rencontre score="0 1">
+				<domicile>VAFC</domicile>
+				<exterieur>ETGFC</exterieur>
+			</rencontre>
+		</journee>
+		<journee date="2017-11-15">
+			<rencontre score="1 3">
+				<domicile>ACA</domicile>
+				<exterieur>VAFC</exterieur>
+			</rencontre>
+			<rencontre score="2 1">
+				<domicile>ETGFC</domicile>
+				<exterieur>TFC</exterieur>
+			</rencontre>
+			<rencontre score="2 0">
+				<domicile>LOSC</domicile>
+				<exterieur>ASMFC</exterieur>
+			</rencontre>
+			<rencontre score="2 0">
+				<domicile>OL</domicile>
+				<exterieur>EAG</exterieur>
+			</rencontre>
+			<rencontre score="0 0">
+				<domicile>MHSC</domicile>
+				<exterieur>FCN</exterieur>
+			</rencontre>
+			<rencontre score="1 2">
+				<domicile>OGCN</domicile>
+				<exterieur>GB</exterieur>
+			</rencontre>
+			<rencontre score="4 0">
+				<domicile>PSG</domicile>
+				<exterieur>FCL</exterieur>
+			</rencontre>
+			<rencontre score="0 0">
+				<domicile>SR</domicile>
+				<exterieur>SCB</exterieur>
+			</rencontre>
+			<rencontre score="1 1">
+				<domicile>SRFC</domicile>
+				<exterieur>OM</exterieur>
+			</rencontre>
+			<rencontre score="0 0">
+				<domicile>FCSM</domicile>
+				<exterieur>ASSE</exterieur>
+			</rencontre>
+		</journee><journee date="2013-10-26">
+			<rencontre score="1 0">
+				<domicile>SCB</domicile>
+				<exterieur>OGCN</exterieur>
+			</rencontre>
+			<rencontre score="1 0">
+				<domicile>GB</domicile>
+				<exterieur>MHSC</exterieur>
+			</rencontre>
+			<rencontre score="2 1">
+				<domicile>EAG</domicile>
+				<exterieur>ACA</exterieur>
+			</rencontre>
+			<rencontre score="2 1">
+				<domicile>FCL</domicile>
+				<exterieur>FCSM</exterieur>
+			</rencontre>
+			<rencontre score="2 3">
+				<domicile>OM</domicile>
+				<exterieur>SR</exterieur>
+			</rencontre>
+			<rencontre score="2 1">
+				<domicile>ASMFC</domicile>
+				<exterieur>OL</exterieur>
+			</rencontre>
+			<rencontre score="0 1">
+				<domicile>FCN</domicile>
+				<exterieur>LOSC</exterieur>
+			</rencontre>
+			<rencontre score="2 2">
+				<domicile>ASSE</domicile>
+				<exterieur>PSG</exterieur>
+			</rencontre>
+			<rencontre score="0 5">
+				<domicile>TFC</domicile>
+				<exterieur>SRFC</exterieur>
+			</rencontre>
+			<rencontre score="0 1">
+				<domicile>VAFC</domicile>
+				<exterieur>ETGFC</exterieur>
+			</rencontre>
+		</journee>
+		<journee date="2017-11-16">
+			<rencontre score="1 3">
+				<domicile>ACA</domicile>
+				<exterieur>VAFC</exterieur>
+			</rencontre>
+			<rencontre score="2 1">
+				<domicile>ETGFC</domicile>
+				<exterieur>TFC</exterieur>
+			</rencontre>
+			<rencontre score="2 0">
+				<domicile>LOSC</domicile>
+				<exterieur>ASMFC</exterieur>
+			</rencontre>
+			<rencontre score="2 0">
+				<domicile>OL</domicile>
+				<exterieur>EAG</exterieur>
+			</rencontre>
+			<rencontre score="0 0">
+				<domicile>MHSC</domicile>
+				<exterieur>FCN</exterieur>
+			</rencontre>
+			<rencontre score="1 2">
+				<domicile>OGCN</domicile>
+				<exterieur>GB</exterieur>
+			</rencontre>
+			<rencontre score="4 0">
+				<domicile>PSG</domicile>
+				<exterieur>FCL</exterieur>
+			</rencontre>
+			<rencontre score="0 0">
+				<domicile>SR</domicile>
+				<exterieur>SCB</exterieur>
+			</rencontre>
+			<rencontre score="1 1">
+				<domicile>SRFC</domicile>
+				<exterieur>OM</exterieur>
+			</rencontre>
+			<rencontre score="0 0">
+				<domicile>FCSM</domicile>
+				<exterieur>ASSE</exterieur>
+			</rencontre>
+		</journee><journee date="2013-10-26">
+			<rencontre score="1 0">
+				<domicile>SCB</domicile>
+				<exterieur>OGCN</exterieur>
+			</rencontre>
+			<rencontre score="1 0">
+				<domicile>GB</domicile>
+				<exterieur>MHSC</exterieur>
+			</rencontre>
+			<rencontre score="2 1">
+				<domicile>EAG</domicile>
+				<exterieur>ACA</exterieur>
+			</rencontre>
+			<rencontre score="2 1">
+				<domicile>FCL</domicile>
+				<exterieur>FCSM</exterieur>
+			</rencontre>
+			<rencontre score="2 3">
+				<domicile>OM</domicile>
+				<exterieur>SR</exterieur>
+			</rencontre>
+			<rencontre score="2 1">
+				<domicile>ASMFC</domicile>
+				<exterieur>OL</exterieur>
+			</rencontre>
+			<rencontre score="0 1">
+				<domicile>FCN</domicile>
+				<exterieur>LOSC</exterieur>
+			</rencontre>
+			<rencontre score="2 2">
+				<domicile>ASSE</domicile>
+				<exterieur>PSG</exterieur>
+			</rencontre>
+			<rencontre score="0 5">
+				<domicile>TFC</domicile>
+				<exterieur>SRFC</exterieur>
+			</rencontre>
+			<rencontre score="0 1">
+				<domicile>VAFC</domicile>
+				<exterieur>ETGFC</exterieur>
+			</rencontre>
+		</journee>
+		<journee date="2017-11-17">
+			<rencontre score="1 3">
+				<domicile>ACA</domicile>
+				<exterieur>VAFC</exterieur>
+			</rencontre>
+			<rencontre score="2 1">
+				<domicile>ETGFC</domicile>
+				<exterieur>TFC</exterieur>
+			</rencontre>
+			<rencontre score="2 0">
+				<domicile>LOSC</domicile>
+				<exterieur>ASMFC</exterieur>
+			</rencontre>
+			<rencontre score="2 0">
+				<domicile>OL</domicile>
+				<exterieur>EAG</exterieur>
+			</rencontre>
+			<rencontre score="0 0">
+				<domicile>MHSC</domicile>
+				<exterieur>FCN</exterieur>
+			</rencontre>
+			<rencontre score="1 2">
+				<domicile>OGCN</domicile>
+				<exterieur>GB</exterieur>
+			</rencontre>
+			<rencontre score="4 0">
+				<domicile>PSG</domicile>
+				<exterieur>FCL</exterieur>
+			</rencontre>
+			<rencontre score="0 0">
+				<domicile>SR</domicile>
+				<exterieur>SCB</exterieur>
+			</rencontre>
+			<rencontre score="1 1">
+				<domicile>SRFC</domicile>
+				<exterieur>OM</exterieur>
+			</rencontre>
+			<rencontre score="0 0">
+				<domicile>FCSM</domicile>
+				<exterieur>ASSE</exterieur>
+			</rencontre>
+		</journee><journee date="2013-10-26">
+			<rencontre score="1 0">
+				<domicile>SCB</domicile>
+				<exterieur>OGCN</exterieur>
+			</rencontre>
+			<rencontre score="1 0">
+				<domicile>GB</domicile>
+				<exterieur>MHSC</exterieur>
+			</rencontre>
+			<rencontre score="2 1">
+				<domicile>EAG</domicile>
+				<exterieur>ACA</exterieur>
+			</rencontre>
+			<rencontre score="2 1">
+				<domicile>FCL</domicile>
+				<exterieur>FCSM</exterieur>
+			</rencontre>
+			<rencontre score="2 3">
+				<domicile>OM</domicile>
+				<exterieur>SR</exterieur>
+			</rencontre>
+			<rencontre score="2 1">
+				<domicile>ASMFC</domicile>
+				<exterieur>OL</exterieur>
+			</rencontre>
+			<rencontre score="0 1">
+				<domicile>FCN</domicile>
+				<exterieur>LOSC</exterieur>
+			</rencontre>
+			<rencontre score="2 2">
+				<domicile>ASSE</domicile>
+				<exterieur>PSG</exterieur>
+			</rencontre>
+			<rencontre score="0 5">
+				<domicile>TFC</domicile>
+				<exterieur>SRFC</exterieur>
+			</rencontre>
+			<rencontre score="0 1">
+				<domicile>VAFC</domicile>
+				<exterieur>ETGFC</exterieur>
+			</rencontre>
+		</journee>
+		<journee date="2017-11-19">
+			<rencontre score="1 3">
+				<domicile>ACA</domicile>
+				<exterieur>VAFC</exterieur>
+			</rencontre>
+			<rencontre score="2 1">
+				<domicile>ETGFC</domicile>
+				<exterieur>TFC</exterieur>
+			</rencontre>
+			<rencontre score="2 0">
+				<domicile>LOSC</domicile>
+				<exterieur>ASMFC</exterieur>
+			</rencontre>
+			<rencontre score="2 0">
+				<domicile>OL</domicile>
+				<exterieur>EAG</exterieur>
+			</rencontre>
+			<rencontre score="0 0">
+				<domicile>MHSC</domicile>
+				<exterieur>FCN</exterieur>
+			</rencontre>
+			<rencontre score="1 2">
+				<domicile>OGCN</domicile>
+				<exterieur>GB</exterieur>
+			</rencontre>
+			<rencontre score="4 0">
+				<domicile>PSG</domicile>
+				<exterieur>FCL</exterieur>
+			</rencontre>
+			<rencontre score="0 0">
+				<domicile>SR</domicile>
+				<exterieur>SCB</exterieur>
+			</rencontre>
+			<rencontre score="1 1">
+				<domicile>SRFC</domicile>
+				<exterieur>OM</exterieur>
+			</rencontre>
+			<rencontre score="0 0">
+				<domicile>FCSM</domicile>
+				<exterieur>ASSE</exterieur>
+			</rencontre>
+		</journee><journee date="2013-10-26">
+			<rencontre score="1 0">
+				<domicile>SCB</domicile>
+				<exterieur>OGCN</exterieur>
+			</rencontre>
+			<rencontre score="1 0">
+				<domicile>GB</domicile>
+				<exterieur>MHSC</exterieur>
+			</rencontre>
+			<rencontre score="2 1">
+				<domicile>EAG</domicile>
+				<exterieur>ACA</exterieur>
+			</rencontre>
+			<rencontre score="2 1">
+				<domicile>FCL</domicile>
+				<exterieur>FCSM</exterieur>
+			</rencontre>
+			<rencontre score="2 3">
+				<domicile>OM</domicile>
+				<exterieur>SR</exterieur>
+			</rencontre>
+			<rencontre score="2 1">
+				<domicile>ASMFC</domicile>
+				<exterieur>OL</exterieur>
+			</rencontre>
+			<rencontre score="0 1">
+				<domicile>FCN</domicile>
+				<exterieur>LOSC</exterieur>
+			</rencontre>
+			<rencontre score="2 2">
+				<domicile>ASSE</domicile>
+				<exterieur>PSG</exterieur>
+			</rencontre>
+			<rencontre score="0 5">
+				<domicile>TFC</domicile>
+				<exterieur>SRFC</exterieur>
+			</rencontre>
+			<rencontre score="0 1">
+				<domicile>VAFC</domicile>
+				<exterieur>ETGFC</exterieur>
+			</rencontre>
+		</journee>
+		<journee date="2017-11-20">
+			<rencontre score="1 3">
+				<domicile>ACA</domicile>
+				<exterieur>VAFC</exterieur>
+			</rencontre>
+			<rencontre score="2 1">
+				<domicile>ETGFC</domicile>
+				<exterieur>TFC</exterieur>
+			</rencontre>
+			<rencontre score="2 0">
+				<domicile>LOSC</domicile>
+				<exterieur>ASMFC</exterieur>
+			</rencontre>
+			<rencontre score="2 0">
+				<domicile>OL</domicile>
+				<exterieur>EAG</exterieur>
+			</rencontre>
+			<rencontre score="0 0">
+				<domicile>MHSC</domicile>
+				<exterieur>FCN</exterieur>
+			</rencontre>
+			<rencontre score="1 2">
+				<domicile>OGCN</domicile>
+				<exterieur>GB</exterieur>
+			</rencontre>
+			<rencontre score="4 0">
+				<domicile>PSG</domicile>
+				<exterieur>FCL</exterieur>
+			</rencontre>
+			<rencontre score="0 0">
+				<domicile>SR</domicile>
+				<exterieur>SCB</exterieur>
+			</rencontre>
+			<rencontre score="1 1">
+				<domicile>SRFC</domicile>
+				<exterieur>OM</exterieur>
+			</rencontre>
+			<rencontre score="0 0">
+				<domicile>FCSM</domicile>
+				<exterieur>ASSE</exterieur>
+			</rencontre>
+		</journee><journee date="2013-10-26">
+			<rencontre score="1 0">
+				<domicile>SCB</domicile>
+				<exterieur>OGCN</exterieur>
+			</rencontre>
+			<rencontre score="1 0">
+				<domicile>GB</domicile>
+				<exterieur>MHSC</exterieur>
+			</rencontre>
+			<rencontre score="2 1">
+				<domicile>EAG</domicile>
+				<exterieur>ACA</exterieur>
+			</rencontre>
+			<rencontre score="2 1">
+				<domicile>FCL</domicile>
+				<exterieur>FCSM</exterieur>
+			</rencontre>
+			<rencontre score="2 3">
+				<domicile>OM</domicile>
+				<exterieur>SR</exterieur>
+			</rencontre>
+			<rencontre score="2 1">
+				<domicile>ASMFC</domicile>
+				<exterieur>OL</exterieur>
+			</rencontre>
+			<rencontre score="0 1">
+				<domicile>FCN</domicile>
+				<exterieur>LOSC</exterieur>
+			</rencontre>
+			<rencontre score="2 2">
+				<domicile>ASSE</domicile>
+				<exterieur>PSG</exterieur>
+			</rencontre>
+			<rencontre score="0 5">
+				<domicile>TFC</domicile>
+				<exterieur>SRFC</exterieur>
+			</rencontre>
+			<rencontre score="0 1">
+				<domicile>VAFC</domicile>
+				<exterieur>ETGFC</exterieur>
+			</rencontre>
+		</journee>
+		<journee date="2017-11-21">
+			<rencontre score="1 3">
+				<domicile>ACA</domicile>
+				<exterieur>VAFC</exterieur>
+			</rencontre>
+			<rencontre score="2 1">
+				<domicile>ETGFC</domicile>
+				<exterieur>TFC</exterieur>
+			</rencontre>
+			<rencontre score="2 0">
+				<domicile>LOSC</domicile>
+				<exterieur>ASMFC</exterieur>
+			</rencontre>
+			<rencontre score="2 0">
+				<domicile>OL</domicile>
+				<exterieur>EAG</exterieur>
+			</rencontre>
+			<rencontre score="0 0">
+				<domicile>MHSC</domicile>
+				<exterieur>FCN</exterieur>
+			</rencontre>
+			<rencontre score="1 2">
+				<domicile>OGCN</domicile>
+				<exterieur>GB</exterieur>
+			</rencontre>
+			<rencontre score="4 0">
+				<domicile>PSG</domicile>
+				<exterieur>FCL</exterieur>
+			</rencontre>
+			<rencontre score="0 0">
+				<domicile>SR</domicile>
+				<exterieur>SCB</exterieur>
+			</rencontre>
+			<rencontre score="1 1">
+				<domicile>SRFC</domicile>
+				<exterieur>OM</exterieur>
+			</rencontre>
+			<rencontre score="0 0">
+				<domicile>FCSM</domicile>
+				<exterieur>ASSE</exterieur>
+			</rencontre>
+		</journee>	
+</championnat>
+ 

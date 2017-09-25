@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE deplacements SYSTEM "deplacements.dtd">
+<!-- New XML document created with EditiX XML Editor (http://www.editix.com) at Tue Jan 24 23:47:43 CET 2017 -->
+
+<deplacements>
+	<trajet>
+		<depart>Seclin  Cnetre Hospitalier </depart>
+		<destination> Roubaix - Avenue Motte </destination> 
+		<date>
+			<jour nom="Mardi" num="22" />
+			<mois nom="Janvier" />
+			<heur valeur="12h35" />
+		</date>
+		<modeTranspore> Metro-Tramway-Bus-Car</modeTranspore>
+		<preference> Arriver le plus rapide </preference>
+		<vitesseDeMarchePied valeur="Normale" />
+		<TempParcours valeur="1h 27min" />
+	</trajet>
+	
+	<deplacement>
+		<pied > 
+			<depart> Seclin  Centre Hospitalier </depart>
+			<destination> Arrét Seclin  Hotel de ville </destination>
+			<durée valeur="13 min" />
+		</pied>
+	</deplacement>	
+	
+	<deplacement heur="14h51">
+			<mode nom="Bus" ligne="52" company="Bus Transpole" duree="23 min">
+				<direction> Lille  Porte des Postes  </direction>
+				<descendre heur="15h14"> arret Lille  CHR B Calmette </descendre>
+			</mode>
+	</deplacement>	
+	
+	<correspondance valeur="4 min" />
+	
+	<deplacement heur="15h18">
+		<mode nom="Metro" ligne="1" company="Metro Transpole" duree="3 min">
+				<direction> Villeneuve d’Ascq  4 Cantons Grand Stade</direction>
+				<descendre heur="15h21"> l’arrêt Lille  Porte des Postes </descendre>
+		</mode>
+	</deplacement>
+		
+	<correspondance valeur="6 min" />	
+		
+	<deplacement heur="15h27">
+		<mode nom="Metro" ligne="2" company="Metro Transpole" duree="25 min">
+				<direction>  Tourcoing  CH Dro </direction>
+				<descendre heur="15h52"> l’arrêt Roubaix  Epeule Montesquieu </descendre>
+		</mode>
+	</deplacement>
+		
+	<correspondance valeur="4 min" />	
+	
+	<deplacement heur="115h56">
+			<mode nom="Bus" ligne="52" company="Bus Transpole" duree="9 min">
+				<direction> n direction de Roubaix  fraternité  </direction>
+				<descendre heur="16h05"> l’arrêt Roubaix  Avenue Motte </descendre>
+			</mode>
+	</deplacement>	
+		
+</deplacements>

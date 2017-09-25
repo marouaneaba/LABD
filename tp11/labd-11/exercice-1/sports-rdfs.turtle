@@ -1,0 +1,90 @@
+@prefix sps:  <http://www.labd.org/2015/sport/schema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+
+sps:Sport
+  a rdfs:Class ;
+  rdfs:label "sport" ;
+  rdfs:comment "Pratique méthodique de toute espèce d'exercices physiques" .
+
+sps:SportCollectif
+  a rdfs:Class ;
+  rdfs:label "sport collectif" ;
+  rdfs:comment "Sport qui oppose des équipes entre elles, et dont les titres sont attribués aux équipes" ;
+  rdfs:subClassOf sps:Sport .
+
+sps:SportIndividuel
+  a rdfs:Class ;
+  rdfs:label "sport individuel" ;
+  rdfs:comment "Sport dont les titres sont attribués individuellement" ;
+  rdfs:subClassOf sps:Sport .
+
+sps:SportEquipe
+  a rdfs:Class ;
+  rdfs:label "sport d'équipe" ;
+  rdfs:comment "Sport qui se joue en équipe, mais dont les titres sont attribués individuellement" ;
+  rdfs:subClassOf sps:Sport .
+
+sps:SportBallon
+  a rdfs:Class ;
+  rdfs:label "sport de ballon" ;
+  rdfs:comment "Sport qui utilise un ballon" ;
+  rdfs:subClassOf sps:SportCollectif .
+
+sps:SportRaquette
+  a rdfs:Class ;
+  rdfs:label "sport de raquettes" ;
+  rdfs:subClassOf sps:SportEquipe, sps:SportIndividuel .
+
+sps:utiliseMateriel
+  a rdf:Property ;
+  rdfs:domain sps:Sport ;
+  rdfs:range sps:MaterielSportif .
+
+sps:MaterielSportif
+  a rdfs:Class ;
+  rdfs:label "materiel sportif" ;
+  rdfs:comment "Materiel utilisé pour pratiquer un sport" .
+
+sps:Ballon
+  a rdfs:Class ;
+  rdfs:label "ballon" ;
+  rdfs:subClassOf sps:MaterielSportif .
+
+sps:formeBallon
+  a rdf:Property ;
+  rdfs:domain sps:Ballon ;
+  rdfs:comment "Sphérique ou ovale" .
+
+sps:Raquette
+  a rdfs:Class ;
+  rdfs:label "raquette" ;
+  rdfs:subClassOf sps:MaterielSportif .
+
+sps:Velo
+  a rdfs:Class ;
+  rdfs:label "vélo" ;
+  rdfs:subClassOf sps:MaterielSportif .
+
+sps:nbJoueursParEquipe
+  a rdf:Property ;
+  rdfs:domain sps:SportCollectif ;
+  rdfs:label "Nombre de joueurs par équipe" .
+
+sps:sePratiqueSur
+  a rdf:Property ;
+  rdfs:domain sps:Sport ;
+  rdfs:range sps:TerrainDeSport ;
+  rdfs:label "lieu où se pratique le sport" .
+
+sps:TerrainDeSport
+  a rdfs:Class ;
+  rdfs:label "lieu de pratique d'un sport" .
+
+sps:largeur
+  a rdf:Property ;
+  rdfs:domain sps:TerrainDeSport .
+
+sps:longueur
+  a rdf:Property ;
+  rdfs:domain sps:TerrainDeSport .

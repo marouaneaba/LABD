@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:Schema xlmns:xsd ="http://www.w3.org/2001/XMLSchema"
+			elementFormDefault ="qualified"
+			targetNamespace = "http://www.b.com">
+			
+			
+			<element name ="B" type ="xsd:string"/>
+			
+</xsd:Schema>

@@ -1,0 +1,12 @@
+@prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sps:  <http://www.labd.org/2015/sport/schema#> .
+@prefix hms:  <http://www.inria.fr/2007/09/11/humans.rdfs#> .
+
+sps:pratique
+  a rdf:Property ;
+  rdfs:domain hms:Person ;
+  rdfs:range sps:Sport ;
+  rdfs:label "action de pratiquer un sport" .
+
+

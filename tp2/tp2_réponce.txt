@@ -1,0 +1,39 @@
+
+
+question 2:
+1.  //fruit/descendant::producteur
+
+2.  //legume[origine="Espagne"]/attribute::type
+
+3.	//fruit[@type="clementine" and @calibre="1" ]/bio
+
+4.	//producteur[following-sibling::origine[@region = "Bretagne"]]
+
+Question 3:
+
+	recettes 1 :
+
+	1.	//recette/titre	
+	2.	//recette/ingredients/ingredient/nom_ing
+	3.	/cuisine/recette[2]/titre
+	4.	//texte/etape[position() =last()]
+	5.	/cuisine/count(//recette)
+	6.	/cuisine/recette[count(//recette/ingredients)<7]
+	7.	//titre[count(//ingredients)<7]
+	8.	/recette/titre[//ingredients/ingredient/nom_ing="farine"]    //à corriger peut étre faux
+	9.	//titre[//recette/categorie == "entrée"]
+	
+	recettes 2 :
+	
+	1.	
+	2.	
+	3.	
+	4.	
+	5.	
+	6.	
+	7.	
+	8.	
+	9.	
+
+
+

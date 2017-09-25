@@ -1,0 +1,177 @@
+
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	
+
+	<xs:simpleType name="typeShortNom">
+
+		<xs:restriction base="xs:string">
+
+			<xs:enumeration value="LOSC" />
+
+			<xs:enumeration value="SRFC"/>
+			<xs:enumeration value="OL"/>
+			<xs:enumeration value="OM"/>
+			<xs:enumeration value="PSG"/>
+			<xs:enumeration value="MHSC"/>
+			<xs:enumeration value="ASSE"/>
+			<xs:enumeration value="GB"/>
+			<xs:enumeration value="FCL"/>
+			<xs:enumeration value="ACA"/>
+			<xs:enumeration value="FCSM"/>
+			<xs:enumeration value="ASMFC"/>
+			<xs:enumeration value="OGCN"/>
+			<xs:enumeration value="VAFC"/>
+			<xs:enumeration value="SR"/>
+			<xs:enumeration value="SCB"/>
+			<xs:enumeration value="ETGFC"/>
+			<xs:enumeration value="EAG"/>
+			<xs:enumeration value="TFC"/>
+			<xs:enumeration value="FCN"/>
+
+		</xs:restriction>
+
+	</xs:simpleType>
+
+	<xs:simpleType name="typeLongNom">
+
+		<xs:restriction base="xs:string">
+
+			<xs:enumeration value="LOSC Lille Metropole"/>
+			<xs:enumeration value="Stade Rennais FC"/>
+			<xs:enumeration value="Olympique Lyonnais"/>
+			<xs:enumeration value="Olympique de Marseille"/>
+			<xs:enumeration value="Paris Saint-Germain"/>
+			<xs:enumeration value="Montpellier Herault SC"/>
+			<xs:enumeration value="AS Saint-Etienne"/>
+			<xs:enumeration value="Girondins de Bordeaux"/>
+			<xs:enumeration value="FC Lorient"/>
+			<xs:enumeration value="AC Ajaccio"/>
+			<xs:enumeration value="FC de Sochaux Montbéliard"/>
+			<xs:enumeration value="AS Monaco FC"/>
+			<xs:enumeration value="OGC Nice"/>
+			<xs:enumeration value="Valenciennes FC"/>
+			<xs:enumeration value="Stade de Reims"/>
+			<xs:enumeration value="SC Bastia"/>
+			<xs:enumeration value="Evian TG FC"/>
+			<xs:enumeration value="EA Guingamp"/>
+			<xs:enumeration value="Toulouse FC"/>
+			<xs:enumeration value="FC Nantes"/>
+
+		</xs:restriction>
+
+	</xs:simpleType>
+
+
+	<xs:element name="club" >
+
+		<xs:complexType>
+
+			<xs:sequence>
+
+				<xs:element name="nom" type="typeLongNom"/>
+
+				<xs:element name="ville" type="xs:string"/>
+
+			</xs:sequence>
+
+			<xs:attribute name="id"  type="typeShortNom" use="required"/>
+
+		</xs:complexType>
+
+	</xs:element>
+
+	
+	<xs:element name="rencontre">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="clubReceveur" type="typeShortNom" />
+				<xs:element name="clubInvité" type="typeShortNom" />
+				<xs:element name="score" type="scoreType" />
+			</xs:sequence>
+		</xs:complexType>
+	
+
+	</xs:element>
+
+	
+
+	
+
+	<xs:simpleType name="scoreType">
+
+		<xs:restriction base="xs:string"> 
+
+			<xs:pattern value="[0-9]+\s?[0-9]+" />
+
+		</xs:restriction>
+
+	</xs:simpleType>
+
+	
+
+	
+
+	<xs:element name="journée">
+
+		<xs:complexType>
+
+			<xs:sequence>
+
+				<xs:element name="date" type="xs:date" />
+
+				<xs:element ref="rencontre" minOccurs="10" maxOccurs="10"/>
+
+			</xs:sequence>
+
+			<xs:attribute name="num" type="xs:int" />
+
+		</xs:complexType>
+
+	</xs:element>
+	
+
+	
+	<xs:element name="journées">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="journée"  minOccurs="38" maxOccurs="38"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	
+	
+	<xs:element name="clubs">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="club" minOccurs="20"  maxOccurs="20"/>
+			</xs:sequence>
+		</xs:complexType>
+		
+		<xs:key name="clefClub">
+			<xs:selector xpath="club"/>
+			<xs:field xpath="@id"/>
+		</xs:key>
+	
+	</xs:element>
+	
+	
+	<xs:element name="championnat">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="clubs" />
+				<xs:element ref="journées" />
+			</xs:sequence>
+		</xs:complexType>
+		<xs:keyref name="refClub1" refer="clefClub">
+			<xs:selector xpath="journées/journée/rencontre"/>
+			<xs:field xpath="clubReceveur"/>
+		</xs:keyref>
+		<xs:keyref name="refClub2" refer="clefClub">
+			<xs:selector xpath="journées/journée/rencontre"/>
+			<xs:field xpath="clubInvité"/>
+		</xs:keyref>
+		
+	</xs:element>
+	
+</xs:schema>
